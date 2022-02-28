@@ -3,7 +3,6 @@ package main
 import (
 	"bytes"
 	"encoding/json"
-	"fmt"
 	"image"
 	"image/draw"
 	"image/png"
@@ -14,8 +13,9 @@ import (
 	"strings"
 )
 
-// go run cmd/strip-spritesheet/main.go cmd/strip-spritesheet/inputs/UI. src/assets/ frameB selectionSquareActive_01
+// go run cmd/strip-spritesheet/main.go cmd/strip-spritesheet/inputs/UI. src/assets/ frameB.png selectionSquareActive_01.png
 // jq -r '.items[].frameName' src/data.json | xargs go run cmd/strip-spritesheet/main.go cmd/strip-spritesheet/inputs/items. src/assets/items/
+// go run cmd/strip-spritesheet/main.go cmd/strip-spritesheet/inputs/items. src/assets/ BoxOpen.png
 
 func main() {
 	name := os.Args[1]
@@ -23,14 +23,11 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-	// fmt.Println(img, info)
 
 	dest := os.Args[2]
 
 	framesToExtract := os.Args[3:]
 	sort.Strings(framesToExtract)
-
-	fmt.Println(framesToExtract)
 
 	for _, f := range info[0].Frames {
 		if len(framesToExtract) > 0 {

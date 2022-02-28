@@ -1,9 +1,11 @@
 import React, { ReactElement } from 'react'
+import styled, { createGlobalStyle, ThemeProvider } from 'styled-components'
+
+import { theme } from './theme'
+import { ItemData } from './types'
+import EvolvesWindow from './Components/EvolvesWindow'
 
 import data from './data.json'
-import { Item } from './Components/Item'
-import styled, { createGlobalStyle, ThemeProvider } from 'styled-components'
-import { theme } from './theme'
 
 const GlobalStyle = createGlobalStyle`
   html, body, #app {
@@ -26,9 +28,8 @@ const GlobalStyle = createGlobalStyle`
 
 const Container = styled.div`
   display: flex;
-  flex-wrap: wrap;
-  align-content: flex-start;
-  gap: .1rem;
+  justify-content: center;
+  padding: .5rem;
 `
 
 export const App = (): ReactElement => {
@@ -36,7 +37,7 @@ export const App = (): ReactElement => {
     <ThemeProvider theme={theme}>
       <GlobalStyle />
       <Container>
-        {data.items.map(i => <Item key={i.key} data={i} />)}
+        <EvolvesWindow items={data.items as ItemData[]} />
       </Container>
     </ThemeProvider>
   )
