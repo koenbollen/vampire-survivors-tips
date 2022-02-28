@@ -1,0 +1,246 @@
+{
+  "items": [
+    {
+      "key": "lightning-ring",
+      "name": "Lightning Ring",
+      "description": "Strikes at random enemies.",
+      "frameName": "LighningRing.png",
+      "type": "weapon"
+    },
+    {
+      "key": "duplicator",
+      "name": "Duplicator",
+      "description": "Weapons fire more projectiles.",
+      "frameName": "Ring.png",
+      "type": "powerup"
+    },
+    {
+      "key": "santa-water",
+      "name": "Santa Water",
+      "description": "Generates damaging zones.",
+      "frameName": "HolyWater.png",
+      "type": "weapon"
+    },
+    {
+      "key": "attractorb",
+      "name": "Attractorb",
+      "description": "Character pickups items from further away.",
+      "frameName": "OrbGlow.png",
+      "type": "powerup"
+    },
+    {
+      "key": "whip",
+      "name": "Whip",
+      "description": "Attacks horizontally, passes through enemies.",
+      "frameName": "Whip.png",
+      "type": "weapon"
+    },
+    {
+      "key": "hollow-heart",
+      "name": "Hollow Heart",
+      "description": "Augments max health by 20%.",
+      "frameName": "HeartBlack.png",
+      "type": "powerup"
+    },
+    {
+      "key": "magic-wand",
+      "name": "Magic Wand",
+      "description": "Fires at the nearest enemy.",
+      "frameName": "WandHoly.png",
+      "type": "weapon"
+    },
+    {
+      "key": "empty-tome",
+      "name": "Empty Tome",
+      "description": "Reduces weapons cooldown by 8%.",
+      "frameName": "Book2.png",
+      "type": "powerup"
+    },
+    {
+      "key": "knife",
+      "name": "Knife",
+      "description": "Fires quickly in the faced direction.",
+      "frameName": "Knife.png",
+      "type": "weapon"
+    },
+    {
+      "key": "bracer",
+      "name": "Bracer",
+      "description": "Increases projectiles speed by 10%.",
+      "frameName": "Gauntlet.png",
+      "type": "powerup"
+    },
+    {
+      "key": "axe",
+      "name": "Axe",
+      "description": "High damage, high Area scaling.",
+      "frameName": "Axe.png",
+      "type": "weapon"
+    },
+    {
+      "key": "candelabrador",
+      "name": "Candelabrador",
+      "description": "Augments area of attacks by 10%.",
+      "frameName": "Candelabra.png",
+      "type": "powerup"
+    },
+    {
+      "key": "cross",
+      "name": "Cross",
+      "description": "Aims at nearest enemy, has boomerang effect.",
+      "frameName": "Cross.png",
+      "type": "weapon"
+    },
+    {
+      "key": "clover",
+      "name": "Clover",
+      "description": "Character gets 10% luckier.",
+      "frameName": "Clover.png",
+      "type": "powerup"
+    },
+    {
+      "key": "king-bible",
+      "name": "King Bible",
+      "description": "Orbits around the character.",
+      "frameName": "HolyBook.png",
+      "type": "weapon"
+    },
+    {
+      "key": "spellbinder",
+      "name": "Spellbinder",
+      "description": "Increases duration of weapon effects by 10%.",
+      "frameName": "EmblemEye.png",
+      "type": "powerup"
+    },
+    {
+      "key": "fire-wand",
+      "name": "Fire Wand",
+      "description": "Fires at a random enemy, deals heavy damage.",
+      "frameName": "WandFire.png",
+      "type": "weapon"
+    },
+    {
+      "key": "spinach",
+      "name": "Spinach",
+      "description": "Raises inflicted damage by 10%.",
+      "frameName": "Leaf.png",
+      "type": "powerup"
+    },
+    {
+      "key": "garlic",
+      "name": "Garlic",
+      "description": "Damages nearby enemies. Reduces resistance to knockback and freeze.",
+      "frameName": "Garlic.png",
+      "type": "weapon"
+    },
+    {
+      "key": "pummarola",
+      "name": "Pummarola",
+      "description": "Character recovers 0.2 HP per second.",
+      "frameName": "HeartRuby.png",
+      "type": "powerup"
+    },
+    {
+      "key": "peachone",
+      "name": "Peachone",
+      "description": "Bombards in a circling zone.",
+      "frameName": "Silf1.png",
+      "type": "weapon"
+    },
+    {
+      "key": "ebony-wings",
+      "name": "Ebony Wings",
+      "description": "Bombards in a circling zone.",
+      "frameName": "Silf2.png",
+      "type": "weapon"
+    },
+    {
+      "key": "thunder-loop",
+      "name": "Thunder Loop",
+      "description": "Evolved Lightning Ring. Projectiles strike twice.",
+      "frameName": "Thunderloop.png",
+      "type": "weapon",
+      "from": ["lightning-ring", "duplicator"]
+    },
+    {
+      "key": "la-borra",
+      "name": "La Borra",
+      "description": "Evolved Santa Water. Damaging zones follow you and grow when they move.",
+      "frameName": "Water2.png",
+      "type": "weapon",
+      "from": ["santa-water", "attractorb"]
+    },
+    {
+      "key": "bloody-tear",
+      "name": "Bloody Tear",
+      "description": "Evolved Whip. Can deal critical damage and absorb HP.",
+      "frameName": "Whip2.png",
+      "type": "weapon",
+      "from": ["whip", "hollow-heart"]
+    },
+    {
+      "key": "holy-wand",
+      "name": "Holy Wand",
+      "description": "Evolved Magic Wand. Fires with no delay.",
+      "frameName": "WandHoly2.png",
+      "type": "weapon",
+      "from": ["magic-wand", "empty-tome"]
+    },
+    {
+      "key": "thousand-edge",
+      "name": "Thousand Edge",
+      "description": "Evolved Knife. Fires with no delay.",
+      "frameName": "Knife2.png",
+      "type": "weapon",
+      "from": ["knife", "bracer"]
+    },
+    {
+      "key": "death-spiral",
+      "name": "Death Spiral",
+      "description": "Evolved Axe. Passes through enemies.",
+      "frameName": "Scythe.png",
+      "type": "weapon",
+      "from": ["axe", "candelabrador"]
+    },
+    {
+      "key": "heaven-sword",
+      "name": "Heaven Sword",
+      "description": "Evolved Cross. Can deal critical damage.",
+      "frameName": "HeavenSword.png",
+      "type": "weapon",
+      "from": ["cross", "clover"]
+    },
+    {
+      "key": "unholy-vespers",
+      "name": "Unholy Vespers",
+      "description": "Evolved King Bible. Never ends.",
+      "frameName": "UnholyBook.png",
+      "type": "weapon",
+      "from": ["king-bible", "spellbinder"]
+    },
+    {
+      "key": "hellfire",
+      "name": "Hellfire",
+      "description": "Evolved Fire Wand. Passes through enemies.",
+      "frameName": "Hellfire.png",
+      "type": "weapon",
+      "from": ["fire-wand", "spinach"]
+    },
+    {
+      "key": "soul-eater",
+      "name": "Soul Eater",
+      "description": "Evolved Garlic. Steals hearts. Power increases when recovering HP.",
+      "frameName": "OrbOrange.png",
+      "type": "weapon",
+      "from": ["garlic", "pummarola"]
+    },
+    {
+      "key": "vandalier",
+      "name": "Vandalier",
+      "description": "Union of Ebony Wings and Peachone.",
+      "frameName": "Silf3.png",
+      "type": "weapon",
+      "from": ["peachone", "ebony-wings"]
+    }
+  ]
+}
