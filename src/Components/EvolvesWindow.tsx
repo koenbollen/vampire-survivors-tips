@@ -1,8 +1,9 @@
-import React, { ReactElement } from 'react'
+import React, { ReactElement, useRef } from 'react'
 import styled from 'styled-components'
 
 import { ItemData } from '../types'
 import Triplet from './Triplet'
+import PopoutButton from './PopoutButton'
 
 // @ts-expect-error
 import frame from 'data-url:../assets/frame1_c2.png'
@@ -10,6 +11,7 @@ import frame from 'data-url:../assets/frame1_c2.png'
 import box from 'data-url:../assets/BoxOpen.png'
 
 const Container = styled.div`
+  position: relative;
   display: inline-flex;
   flex-flow: row wrap;
   padding: 2rem;
@@ -29,7 +31,7 @@ const Box = styled.div`
   width: 2rem;
   height: 2rem;
   margin-top: -0.2rem;
-  margin-right: 1rem;
+  margin-right: 0.5rem;
   background: url(${box}) center/cover no-repeat;
   image-rendering: pixelated;
 `
@@ -76,13 +78,16 @@ export default ({ items }: EvolvesWindowProps): ReactElement => {
     return 0
   })
 
+  const containerRef = useRef<HTMLDivElement>(null)
+
   return (
-    <Container>
+    <Container ref={containerRef}>
       <Sidebar>
         <Spacer />
         <CombineSpacer />
         <Spacer />
         <Box />
+        <PopoutButton target={containerRef} />
       </Sidebar>
       {triplets.map(t => <Triplet key={t[2].key} weapon={t[0]} powerup={t[1]} result={t[2]} />)}
     </Container>

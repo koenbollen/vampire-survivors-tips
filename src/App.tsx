@@ -8,7 +8,7 @@ import EvolvesWindow from './Components/EvolvesWindow'
 import data from './data.json'
 
 const GlobalStyle = createGlobalStyle`
-  html, body, #app {
+  html, body, #app, svg, foreignObject {
     background: ${props => props.theme.colors.background};
     box-sizing: border-box;
     height: 100%;
