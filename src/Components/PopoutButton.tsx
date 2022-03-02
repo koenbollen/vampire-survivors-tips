@@ -5,15 +5,30 @@ import styled from 'styled-components'
 // @ts-expect-error
 import square from 'data-url:../assets/menu_square_flat_24.png'
 
-const Button = styled.button`
+// @ts-expect-error
+import popupIcon from 'data-url:../assets/popout.svg'
+
+const Button = styled.div`
   position: absolute;
   left: 1rem;
   bottom: 1rem;
-  width: 2rem;
-  height: 2rem;
+  width: 3rem;
+  height: 3rem;
   background: url(${square}) center/cover no-repeat;
   image-rendering: pixelated;
   cursor: pointer;
+
+  &::after {
+    content: '';
+    background: url(${popupIcon}) center/cover no-repeat;
+    background-size: 55%;
+    color: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+  }
 `
 
 interface PopoutButtonProps {
@@ -21,7 +36,7 @@ interface PopoutButtonProps {
 }
 
 export default ({ target }: PopoutButtonProps): ReactElement => {
-  const selfRef = useRef<HTMLButtonElement>(null)
+  const selfRef = useRef<HTMLDivElement>(null)
 
   const click = async (): Promise<void> => {
     if (target.current !== null && selfRef.current !== null) {
