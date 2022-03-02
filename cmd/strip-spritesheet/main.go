@@ -13,7 +13,7 @@ import (
 	"strings"
 )
 
-// go run cmd/strip-spritesheet/main.go cmd/strip-spritesheet/inputs/UI. src/assets/ frameB.png selectionSquareActive_01.png
+// go run cmd/strip-spritesheet/main.go cmd/strip-spritesheet/inputs/UI. src/assets/ frameB.png selectionSquareActive_01.png menu_square_flat_24.png
 // jq -r '.items[].frameName' src/data.json | xargs go run cmd/strip-spritesheet/main.go cmd/strip-spritesheet/inputs/items. src/assets/items/
 // go run cmd/strip-spritesheet/main.go cmd/strip-spritesheet/inputs/items. src/assets/ BoxOpen.png
 

@@ -92,7 +92,10 @@ function createForeignObjectSVG (
 
   const defs = document.createElement('defs')
   const style = document.createElement('style')
-  style.innerHTML = document.head.querySelector('style')?.innerHTML ?? ''
+  const cssRules = document.styleSheets[0].cssRules
+  for (let i = 0; i < cssRules.length; i++) {
+    style.innerHTML += cssRules[i].cssText
+  }
   defs.appendChild(style)
   svg.appendChild(defs)
 
