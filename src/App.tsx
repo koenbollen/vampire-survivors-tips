@@ -4,9 +4,10 @@ import styled, { createGlobalStyle, ThemeProvider } from 'styled-components'
 import { theme } from './theme'
 import { ItemData } from './types'
 import EvolvesWindow from './Components/EvolvesWindow'
+import Footer from './Components/Footer'
+import Title from './Components/Title'
 
 import data from './data.json'
-import Footer from './Components/Footer'
 
 const GlobalStyle = createGlobalStyle`
   html, body, #app, svg, foreignObject {
@@ -38,6 +39,7 @@ export const App = (): ReactElement => {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
+      <Title text='Weapon Evolves' />
       <Container>
         <EvolvesWindow items={data.items as ItemData[]} />
       </Container>
