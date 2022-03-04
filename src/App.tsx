@@ -6,12 +6,14 @@ import { ItemData } from './types'
 import EvolvesWindow from './Components/EvolvesWindow'
 
 import data from './data.json'
+import Footer from './Components/Footer'
 
 const GlobalStyle = createGlobalStyle`
   html, body, #app, svg, foreignObject {
     background: ${props => props.theme.colors.background};
     box-sizing: border-box;
     height: 100%;
+    font-family: 'courier new', monospace;
   }
   *, *:before, *:after {
     box-sizing: inherit;
@@ -39,6 +41,7 @@ export const App = (): ReactElement => {
       <Container>
         <EvolvesWindow items={data.items as ItemData[]} />
       </Container>
+      <Footer />
     </ThemeProvider>
   )
 }
