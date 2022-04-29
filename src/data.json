@@ -155,6 +155,81 @@
       "type": "weapon"
     },
     {
+      "key": "crown",
+      "name": "Crown",
+      "frameName": "Crown.png",
+      "type": "powerup"
+    },
+    {
+      "key": "pentagram",
+      "name": "Pentagram",
+      "frameName": "Pentagram.png",
+      "type": "weapon"
+    },
+    {
+      "key": "runetracer",
+      "name": "Runetracer",
+      "frameName": "Diamond2.png",
+      "type": "weapon"
+    },
+    {
+      "key": "armor",
+      "name": "Armor",
+      "frameName": "ArmorIron.png",
+      "type": "powerup"
+    },
+    {
+      "key": "guns1",
+      "name": "Gun1",
+      "frameName": "Guns.png",
+      "type": "weapon"
+    },
+    {
+      "key": "guns2",
+      "name": "Gun2",
+      "frameName": "Guns2.png",
+      "type": "weapon"
+    },
+    {
+      "key": "tiramisu",
+      "name": "Tiramisu",
+      "frameName": "Tiramisu.png",
+      "type": "powerup"
+    },
+    {
+      "key": "guns3",
+      "name": "Gun3",
+      "frameName": "Guns3.png",
+      "type": "weapon",
+      "from": ["guns1", "guns2", "tiramisu"]
+    },
+    {
+      "key": "carnage",
+      "name": "Carnage",
+      "frameName": "Carnage.png",
+      "type": "powerup",
+      "from": ["runetracer", "armor"]
+    },
+    {
+      "key": "song",
+      "name": "Song",
+      "frameName": "Song.png",
+      "type": "weapon"
+    },
+    {
+      "key": "curse",
+      "name": "Curse",
+      "frameName": "Curse.png",
+      "type": "powerup"
+    },
+    {
+      "key": "song2",
+      "name": "Song2",
+      "frameName": "Song2.png",
+      "type": "weapon",
+      "from": ["song", "curse"]
+    },
+    {
       "key": "thunder-loop",
       "name": "Thunder Loop",
       "description": "Evolved Lightning Ring. Projectiles strike twice.",

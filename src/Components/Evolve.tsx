@@ -5,8 +5,6 @@ import { ItemData } from '../types'
 import Item from './Item'
 
 // @ts-expect-error
-import combine from 'data-url:../assets/weaponLevelFull.png'
-// @ts-expect-error
 import equals from 'data-url:../assets/pause.png'
 
 const Container = styled.div`
@@ -16,12 +14,20 @@ const Container = styled.div`
   gap: .2rem;
 `
 
-const CombineSymbol = styled.div`
-  content: '';
-  width: .8rem;
-  height: .8rem;
-  background: url(${combine}) center/cover no-repeat;
-  image-rendering: pixelated;
+const PartsContainer = styled.div`
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  height: calc(8rem + 8px);
+`
+
+const ItemWrapper = styled.div`
+  overflow: hidden;
+
+  &:last-child, &:first-child:hover {
+    overflow: visible;
+  }
 `
 
 const EqualsSymbol = styled.div`
@@ -33,19 +39,22 @@ const EqualsSymbol = styled.div`
   transform: rotate(90deg);
 `
 
-interface TripletProps {
-  weapon: ItemData
-  powerup: ItemData
+interface EvolveProps {
+  parts: ItemData[]
   result: ItemData
 }
 
-export default (props: TripletProps): ReactElement => {
-  const { weapon, powerup, result } = props
+export default (props: EvolveProps): ReactElement => {
+  const { parts, result } = props
   return (
     <Container>
-      <Item data={weapon} />
-      <CombineSymbol />
-      <Item data={powerup} />
+      <PartsContainer>
+        {parts.map((part, i) => (
+          <ItemWrapper key={part.key}>
+            <Item data={part} />
+          </ItemWrapper>
+        ))}
+      </PartsContainer>
       <EqualsSymbol />
       <Item data={result} />
     </Container>

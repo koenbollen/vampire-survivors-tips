@@ -2,7 +2,7 @@ import React, { ReactElement, useRef } from 'react'
 import styled from 'styled-components'
 
 import { ItemData } from '../types'
-import Triplet from './Triplet'
+import Evolve from './Evolve'
 import PopoutButton from './PopoutButton'
 
 // @ts-expect-error
@@ -58,18 +58,17 @@ export default ({ items }: EvolvesWindowProps): ReactElement => {
     return m
   }, {})
 
-  const triplets = items.filter(t => t.from !== undefined).map(t => {
-    if (t.from?.length !== 2) {
+  const evolves = items.filter(t => t.from !== undefined).map(t => {
+    if ((t.from == null) || t.from?.length < 2) {
       return undefined
     } else {
       return [
-        itemLookup[t.from[0]],
-        itemLookup[t.from[1]],
-        t
+        t,
+        ...t.from.map(i => itemLookup[i])
       ]
     }
   }).filter(t => t) as ItemData[][]
-  triplets.sort((a, b) => {
+  evolves.sort((a, b) => {
     const i = 2
     if (a[i].name < b[i].name) {
       return -1
@@ -78,6 +77,8 @@ export default ({ items }: EvolvesWindowProps): ReactElement => {
     }
     return 0
   })
+
+  console.log(evolves)
 
   const containerRef = useRef<HTMLDivElement>(null)
 
@@ -90,7 +91,7 @@ export default ({ items }: EvolvesWindowProps): ReactElement => {
         <Box />
         <PopoutButton target={containerRef} />
       </Sidebar>
-      {triplets.map(t => <Triplet key={t[2].key} weapon={t[0]} powerup={t[1]} result={t[2]} />)}
+      {evolves.map(t => <Evolve key={t[0].key} result={t[0]} parts={t.slice(1)} />)}
     </Container>
   )
 }

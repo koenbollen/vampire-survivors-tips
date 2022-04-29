@@ -25,10 +25,8 @@ export default (props: TitleProps): ReactElement => {
     ctx.font = "16px 'Courier New'"
     ctx.textBaseline = 'top'
     const bounds = ctx.measureText(text)
-    console.log(bounds)
     canvas.width = Math.ceil(bounds.width) + 4
     canvas.height = 12 + 4
-    console.log(canvas.width, canvas.height)
     canvas.style.width = `${canvas.width * 3}px`
     ctx.font = "16px 'Courier New'"
     ctx.textBaseline = 'top'
