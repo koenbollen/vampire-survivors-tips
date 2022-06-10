@@ -15,7 +15,7 @@ const Container = styled.div`
   display: inline-flex;
   flex-flow: row wrap;
   padding: 2rem;
-  min-width: 860px;
+  min-width: 1140px;
 
   border-image: url(${frame}) ${props => props.theme.border.source} fill / ${props => props.theme.border.size} repeat;
   image-rendering: pixelated;

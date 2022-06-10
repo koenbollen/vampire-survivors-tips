@@ -19,7 +19,7 @@ const PartsContainer = styled.div`
   flex-direction: column;
   justify-content: space-between;
 
-  height: calc(8rem + 8px);
+  height: calc(6rem + 8px);
 `
 
 const ItemWrapper = styled.div`

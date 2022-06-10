@@ -13,8 +13,8 @@ import select from 'data-url:../assets/selectionSquareActive_01.png'
 
 const Container = styled.div`
   position: relative;
-  width: 4rem;
-  height: 4rem;
+  width: 3rem;
+  height: 3rem;
   margin: 2px;
   padding: .7rem;
   image-rendering: pixelated;

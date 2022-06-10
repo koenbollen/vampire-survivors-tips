@@ -167,6 +167,13 @@
       "type": "weapon"
     },
     {
+      "key": "gorgeous-moon",
+      "name": "Gorgeous Moon",
+      "frameName": "Pentagram2.png",
+      "type": "weapon",
+      "from": ["pentagram", "crown"]
+    },
+    {
       "key": "runetracer",
       "name": "Runetracer",
       "frameName": "Diamond2.png",
@@ -316,6 +323,113 @@
       "frameName": "Silf3.png",
       "type": "weapon",
       "from": ["peachone", "ebony-wings"]
+    },
+    {
+      "key": "gatti-amari",
+      "name": "Gatti Amari",
+      "frameName": "Cat.png",
+      "type": "weapon"
+    },
+    {
+      "key": "stone-mask",
+      "name": "Stone Mask",
+      "frameName": "Mask.png",
+      "type": "powerup"
+    },
+    {
+      "key": "gatti-amari",
+      "name": "Vicious Hunger",
+      "frameName": "cateye.png",
+      "type": "weapon",
+      "from": ["gatti-amari", "stone-mask"]
+    },
+    {
+      "key": "song-of-mana",
+      "name": "Song of Mana",
+      "frameName": "Song.png",
+      "type": "weapon"
+    },
+    {
+      "key": "skull-o-maniac",
+      "name": "Skull O'Maniac",
+      "frameName": "Curse.png",
+      "type": "powerup"
+    },
+    {
+      "key": "mannajja",
+      "name": "Mannajja",
+      "frameName": "Song2.png",
+      "type": "weapon",
+      "from": ["song-of-mana", "skull-o-maniac"]
+    },
+    {
+      "key": "shadow-pinion",
+      "name": "Shadow Pinion",
+      "frameName": "trapano.png",
+      "type": "weapon"
+    },
+    {
+      "key": "wings",
+      "name": "Wings",
+      "frameName": "Wing.png",
+      "type": "powerup"
+    },
+    {
+      "key": "valkyrie-turner",
+      "name": "Valkyrie Turner",
+      "frameName": "trapano2.png",
+      "type": "weapon",
+      "from": ["shadow-pinion", "wings"]
+    },
+    {
+      "key": "clock-lancet",
+      "name": "Clock Lancet",
+      "frameName": "Lancet.png",
+      "type": "weapon"
+    },
+    {
+      "key": "silver-ring",
+      "name": "Silver Ring",
+      "frameName": "silverring.png",
+      "type": "powerup"
+    },
+    {
+      "key": "gold-ring",
+      "name": "Gold Ring",
+      "frameName": "goldring.png",
+      "type": "powerup"
+    },
+    {
+      "key": "infinite-corridor",
+      "name": "Infinite Corridor",
+      "frameName": "portal.png",
+      "type": "weapon",
+      "from": ["clock-lancet", "silver-ring", "gold-ring"]
+    },
+    {
+      "key": "laurel",
+      "name": "Laurel",
+      "frameName": "Laurel.png",
+      "type": "weapon"
+    },
+    {
+      "key": "metaglio-left",
+      "name": "Metaglio Left",
+      "frameName": "bsleft.png",
+      "type": "powerup"
+    },
+    {
+      "key": "metaglio-right",
+      "name": "Metaglio Right",
+      "frameName": "bsright.png",
+      "type": "powerup"
+    },
+    {
+      "key": "crimson-shroud",
+      "name": "Crimson Shroud",
+      "frameName": "cape.png",
+      "type": "weapon",
+      "from": ["laurel", "metaglio-left", "metaglio-right"]
     }
   ]
 }

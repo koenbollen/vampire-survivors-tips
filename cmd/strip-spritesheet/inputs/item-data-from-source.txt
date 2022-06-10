@@ -1,0 +1,2250 @@
+const _0x4f676c = {
+  [_0x5037ae[_0x114511(0xb08)]]: [{
+    'level': 0x1,
+    'bulletType': _0x5037ae[_0x114511(0xb08)],
+    'name': 'Whip',
+    'description': 'Attacks horizontally, passes through enemies.',
+    'tips': 'Ignores: speed, duration.',
+    'texture': 'items',
+    'frameName': 'Whip.png',
+    'evoSynergy': [_0x5037ae['MAXHEALTH']],
+    'evoInto': _0x5037ae[_0x114511(0x507)],
+    'isUnlocked': !0x0,
+    'poolLimit': 0xf,
+    'rarity': 0x64,
+    'interval': 0x546,
+    'repeatInterval': 0x64,
+    'power': 0x1,
+    'area': 0x1,
+    'speed': 0x1,
+    'amount': 0x1,
+    'hitsWalls': !0x1,
+    'critChance': 0.2,
+    'critMul': 0x2
+  }, {
+    'amount': 0x1
+  }, {
+    'power': 0.5
+  }, {
+    'power': 0.5,
+    'area': 0.1
+  }, {
+    'power': 0.5
+  }, {
+    'power': 0.5,
+    'area': 0.1
+  }, {
+    'power': 0.5
+  }, {
+    'power': 0.5,
+    'addEvolvedWeapon': _0x5037ae['VAMPIRICA']
+  }],
+  [_0x5037ae['VAMPIRICA']]: [{
+    'hidden': !0x1,
+    'level': 0x1,
+    'bulletType': _0x5037ae[_0x114511(0x507)],
+    'name': 'Bloody Tear',
+    'description': 'Evolved Whip. Can deal critical damage and absorb HP.',
+    'tips': 'Requires: Hollow Heart',
+    'texture': 'items',
+    'frameName': 'Whip2.png',
+    'isEvolution': !0x0,
+    'evolvesFrom': [_0x5037ae['WHIP']],
+    'requires': [_0x5037ae['MAXHEALTH']],
+    'hitVFX': _0x343cf6['DARK'],
+    'isUnlocked': !0x0,
+    'poolLimit': 0xf,
+    'rarity': 0x1,
+    'interval': 0x546,
+    'repeatInterval': 0x64,
+    'power': 0x4,
+    'area': 1.3,
+    'speed': 0x1,
+    'amount': 0x2,
+    'critChance': 0.1,
+    'critMul': 0x2,
+    'hitsWalls': !0x1
+  }],
+  [_0x5037ae[_0x114511(0x68e)]]: [{
+    'level': 0x1,
+    'bulletType': _0x5037ae[_0x114511(0x68e)],
+    'name': 'Magic Wand',
+    'description': 'Fires at the nearest enemy.',
+    'tips': 'Ignores: duration.',
+    'texture': 'items',
+    'frameName': 'WandHoly.png',
+    'evoSynergy': [_0x5037ae[_0x114511(0x68c)]],
+    'evoInto': _0x5037ae[_0x114511(0x453)],
+    'isUnlocked': !0x0,
+    'poolLimit': 0x3c,
+    'rarity': 0x64,
+    'interval': 0x4b0,
+    'repeatInterval': 0x64,
+    'power': 0x1,
+    'area': 0x1,
+    'speed': 0x1,
+    'amount': 0x1,
+    'penetrating': 0x1
+  }, {
+    'amount': 0x1
+  }, {
+    'interval': -0xc8
+  }, {
+    'amount': 0x1
+  }, {
+    'power': 0x1
+  }, {
+    'amount': 0x1
+  }, {
+    'penetrating': 0x1
+  }, {
+    'power': 0x1,
+    'addEvolvedWeapon': _0x5037ae['HOLY_MISSILE']
+  }],
+  [_0x5037ae['HOLY_MISSILE']]: [{
+    'level': 0x1,
+    'bulletType': _0x5037ae[_0x114511(0x453)],
+    'name': 'Holy Wand',
+    'description': 'Evolved Magic Wand. Fires with no delay.',
+    'tips': 'Requires: Empty Tome.',
+    'texture': 'items',
+    'frameName': 'WandHoly2.png',
+    'isEvolution': !0x0,
+    'evolvesFrom': [_0x5037ae['MAGIC_MISSILE']],
+    'requires': [_0x5037ae[_0x114511(0x68c)]],
+    'volume': 0.1,
+    'poolLimit': 0x3c,
+    'rarity': 0x1,
+    'interval': 0x1f4,
+    'repeatInterval': 0x64,
+    'power': 0x3,
+    'area': 0x1,
+    'speed': 0x2,
+    'amount': 0x4,
+    'penetrating': 0x2
+  }],
+  [_0x5037ae['KNIFE']]: [{
+    'level': 0x1,
+    'bulletType': _0x5037ae[_0x114511(0xdc6)],
+    'name': 'Knife',
+    'description': 'Fires quickly in the faced direction.',
+    'tips': 'Ignores: duration.',
+    'texture': 'items',
+    'frameName': 'Knife.png',
+    'evoSynergy': [_0x5037ae[_0x114511(0x7a6)]],
+    'evoInto': _0x5037ae[_0x114511(0x533)],
+    'isUnlocked': !0x0,
+    'poolLimit': 0x46,
+    'rarity': 0x64,
+    'interval': 0x3e8,
+    'repeatInterval': 0x64,
+    'power': 0.65,
+    'area': 0x1,
+    'speed': 0x1,
+    'amount': 0x1,
+    'penetrating': 0x1,
+    'knockback': 0.5,
+    'critChance': 0.3,
+    'critMul': 0x3
+  }, {
+    'amount': 0x1
+  }, {
+    'amount': 0x1,
+    'power': 0.5
+  }, {
+    'amount': 0x1,
+    'repeatInterval': -0x14
+  }, {
+    'penetrating': 0x1
+  }, {
+    'amount': 0x1,
+    'repeatInterval': -0x14
+  }, {
+    'amount': 0x1,
+    'power': 0.5
+  }, {
+    'penetrating': 0x1,
+    'repeatInterval': -0x14,
+    'addEvolvedWeapon': _0x5037ae['THOUSAND']
+  }],
+  [_0x5037ae[_0x114511(0x533)]]: [{
+    'level': 0x1,
+    'bulletType': _0x5037ae['THOUSAND'],
+    'name': 'Thousand Edge',
+    'description': 'Evolved Knife. Fires with no delay.',
+    'tips': 'Requires: Bracer.',
+    'texture': 'items',
+    'frameName': 'Knife2.png',
+    'isEvolution': !0x0,
+    'volume': 0.2,
+    'evolvesFrom': [_0x5037ae[_0x114511(0xdc6)]],
+    'requires': [_0x5037ae[_0x114511(0x7a6)]],
+    'poolLimit': 0x46,
+    'rarity': 0x1,
+    'interval': 0x15e,
+    'repeatInterval': 0x32,
+    'power': 1.65,
+    'area': 0x1,
+    'speed': 1.5,
+    'amount': 0x6,
+    'penetrating': 0x3,
+    'knockback': 0.5,
+    'critChance': 0.3,
+    'critMul': 0x3
+  }],
+  [_0x5037ae['AXE']]: [{
+    'level': 0x1,
+    'bulletType': _0x5037ae[_0x114511(0x1c9)],
+    'name': 'Axe',
+    'description': 'High damage, high Area scaling.',
+    'tips': 'Ignores: duration.',
+    'texture': 'items',
+    'frameName': 'Axe.png',
+    'evoSynergy': [_0x5037ae['AREA']],
+    'evoInto': _0x5037ae[_0x114511(0x62e)],
+    'isUnlocked': !0x0,
+    'poolLimit': 0x46,
+    'rarity': 0x64,
+    'interval': 0xfa0,
+    'repeatInterval': 0xc8,
+    'power': 0x2,
+    'area': 0x1,
+    'speed': 0x1,
+    'amount': 0x1,
+    'penetrating': 0x3,
+    'duration': 0x7d0,
+    'hitsWalls': !0x1,
+    'critChance': 0.3,
+    'critMul': 0x2
+  }, {
+    'amount': 0x1
+  }, {
+    'power': 0x2
+  }, {
+    'penetrating': 0x2
+  }, {
+    'amount': 0x1
+  }, {
+    'power': 0x2
+  }, {
+    'penetrating': 0x2
+  }, {
+    'power': 0x2,
+    'addEvolvedWeapon': _0x5037ae[_0x114511(0x62e)]
+  }],
+  [_0x5037ae[_0x114511(0x62e)]]: [{
+    'level': 0x1,
+    'bulletType': _0x5037ae['SCYTHE'],
+    'name': 'Death Spiral',
+    'description': 'Evolved Axe. Passes through enemies.',
+    'tips': 'Requires: Candelabrador.',
+    'texture': 'items',
+    'frameName': 'Scythe.png',
+    'isEvolution': !0x0,
+    'evolvesFrom': [_0x5037ae['AXE']],
+    'requires': [_0x5037ae[_0x114511(0x4d5)]],
+    'poolLimit': 0x19,
+    'rarity': 0x1,
+    'interval': 0xfa0,
+    'repeatInterval': 0x32,
+    'power': 0x6,
+    'area': 1.2,
+    'speed': 0.8,
+    'amount': 0x9,
+    'penetrating': 0x3e8,
+    'hitsWalls': !0x1,
+    'critChance': 0.3,
+    'critMul': 0x2
+  }],
+  [_0x5037ae['CROSS']]: [{
+    'level': 0x1,
+    'bulletType': _0x5037ae[_0x114511(0x185)],
+    'name': 'Cross',
+    'description': 'Aims at nearest enemy, has boomerang effect.',
+    'tips': 'Ignores: duration.',
+    'texture': 'items',
+    'frameName': 'Cross.png',
+    'evoSynergy': [_0x5037ae[_0x114511(0x1ba)]],
+    'evoInto': _0x5037ae['HEAVENSWORD'],
+    'isUnlocked': !0x1,
+    'poolLimit': 0xf,
+    'rarity': 0x50,
+    'interval': 0x7d0,
+    'repeatInterval': 0x64,
+    'power': 0.5,
+    'area': 0x1,
+    'speed': 0x1,
+    'amount': 0x1,
+    'hitsWalls': !0x1
+  }, {
+    'power': 0x1
+  }, {
+    'speed': 0.25,
+    'area': 0.1
+  }, {
+    'amount': 0x1
+  }, {
+    'power': 0x1
+  }, {
+    'speed': 0.25,
+    'area': 0.1
+  }, {
+    'amount': 0x1
+  }, {
+    'power': 0x1,
+    'addEvolvedWeapon': _0x5037ae['HEAVENSWORD']
+  }],
+  [_0x5037ae[_0x114511(0x2ca)]]: [{
+    'hidden': !0x1,
+    'level': 0x1,
+    'bulletType': _0x5037ae[_0x114511(0x2ca)],
+    'name': 'Heaven Sword',
+    'description': 'Evolved Cross. Can deal critical damage.',
+    'tips': 'Requires: Clover.',
+    'texture': 'items',
+    'frameName': 'HeavenSword.png',
+    'isEvolution': !0x0,
+    'evolvesFrom': [_0x5037ae['CROSS']],
+    'requires': [_0x5037ae['LUCK']],
+    'hitVFX': _0x343cf6[_0x114511(0x96e)],
+    'poolLimit': 0xa,
+    'rarity': 0x1,
+    'isUnlocked': !0x1,
+    'interval': 0xce4,
+    'repeatInterval': 0x1f4,
+    'knockback': 0x6,
+    'power': 7.7,
+    'area': 1.2,
+    'speed': 0x2,
+    'amount': 0x1,
+    'critChance': 0.1,
+    'critMul': 2.5,
+    'hitsWalls': !0x1
+  }],
+  [_0x5037ae[_0x114511(0xe60)]]: [{
+    'level': 0x1,
+    'bulletType': _0x5037ae[_0x114511(0xe60)],
+    'name': 'King Bible',
+    'description': 'Orbits around the character.',
+    'tips': 'Best with: speed, duration, area.',
+    'texture': 'items',
+    'frameName': 'HolyBook.png',
+    'evoSynergy': [_0x5037ae[_0x114511(0x5d9)]],
+    'evoInto': _0x5037ae[_0x114511(0xcfc)],
+    'isUnlocked': !0x0,
+    'poolLimit': 0x19,
+    'rarity': 0x50,
+    'interval': 0xbb8,
+    'repeatInterval': 0x0,
+    'power': 0x1,
+    'area': 0x1,
+    'speed': 0x1,
+    'amount': 0x1,
+    'duration': 0xbb8,
+    'hitBoxDelay': 0x6a4,
+    'intervalDependsOnDuration': !0x0,
+    'hitsWalls': !0x1
+  }, {
+    'amount': 0x1
+  }, {
+    'speed': 0.3,
+    'area': 0.25
+  }, {
+    'duration': 0x1f4,
+    'power': 0x1
+  }, {
+    'amount': 0x1
+  }, {
+    'speed': 0.3,
+    'area': 0.25
+  }, {
+    'duration': 0x1f4,
+    'power': 0x1
+  }, {
+    'amount': 0x1,
+    'addEvolvedWeapon': _0x5037ae[_0x114511(0xcfc)]
+  }],
+  [_0x5037ae[_0x114511(0xcfc)]]: [{
+    'level': 0x1,
+    'bulletType': _0x5037ae['VESPERS'],
+    'name': 'Unholy Vespers',
+    'description': 'Evolved King Bible. Never ends.',
+    'tips': 'Requires: Spellbinder.',
+    'texture': 'items',
+    'frameName': 'UnholyBook.png',
+    'isEvolution': !0x0,
+    'evolvesFrom': [_0x5037ae['HOLYBOOK']],
+    'requires': [_0x5037ae['DURATION']],
+    'hitVFX': _0x343cf6[_0x114511(0x1ce)],
+    'poolLimit': 0x19,
+    'rarity': 0x1,
+    'interval': 0xbb8,
+    'repeatInterval': 0x0,
+    'power': 0x3,
+    'area': 1.75,
+    'speed': 1.5,
+    'amount': 0x4,
+    'duration': 0xbb8,
+    'hitBoxDelay': 0x6a4,
+    'knockback': 0x4,
+    'hitsWalls': !0x1,
+    'intervalDependsOnDuration': !0x1
+  }],
+  [_0x5037ae['FIREBALL']]: [{
+    'level': 0x1,
+    'bulletType': _0x5037ae[_0x114511(0x9cf)],
+    'name': 'Fire Wand',
+    'description': 'Fires at a random enemy, deals heavy damage.',
+    'tips': 'Ignores: duration.',
+    'texture': 'items',
+    'frameName': 'WandFire.png',
+    'evoSynergy': [_0x5037ae['MIGHT']],
+    'evoInto': _0x5037ae[_0x114511(0x1a8)],
+    'hitVFX': _0x343cf6['FIRE'],
+    'isUnlocked': !0x1,
+    'poolLimit': 0xf,
+    'rarity': 0x50,
+    'interval': 0xbb8,
+    'repeatInterval': 0x14,
+    'power': 0x2,
+    'area': 0x1,
+    'speed': 0.75,
+    'amount': 0x3,
+    'duration': 0x64
+  }, {
+    'power': 0x1
+  }, {
+    'power': 0x1,
+    'speed': 0.2
+  }, {
+    'power': 0x1
+  }, {
+    'power': 0x1,
+    'speed': 0.2
+  }, {
+    'power': 0x1
+  }, {
+    'power': 0x1,
+    'speed': 0.2
+  }, {
+    'power': 0x1,
+    'addEvolvedWeapon': _0x5037ae['HELLFIRE']
+  }],
+  [_0x5037ae[_0x114511(0x1a8)]]: [{
+    'level': 0x1,
+    'bulletType': _0x5037ae[_0x114511(0x1a8)],
+    'name': 'Hellfire',
+    'description': 'Evolved Fire Wand. Passes through enemies.',
+    'tips': 'Requires: Spinach.',
+    'texture': 'items',
+    'frameName': 'Hellfire.png',
+    'hitVFX': _0x343cf6[_0x114511(0x979)],
+    'poolLimit': 0xa,
+    'rarity': 0x1,
+    'isEvolution': !0x0,
+    'evolvesFrom': [_0x5037ae[_0x114511(0x9cf)]],
+    'requires': [_0x5037ae['MIGHT']],
+    'interval': 0xbb8,
+    'repeatInterval': 0xc8,
+    'power': 0xa,
+    'area': 0x1,
+    'speed': 0x1,
+    'amount': 0x2,
+    'duration': 0x64,
+    'hitsWalls': !0x1
+  }],
+  [_0x5037ae['GARLIC']]: [{
+    'level': 0x1,
+    'bulletType': _0x5037ae['GARLIC'],
+    'name': 'Garlic',
+    'description': 'Damages nearby enemies. Reduces resistance to knockback and freeze.',
+    'tips': 'Ignores: amount, duration, speed.',
+    'texture': 'items',
+    'frameName': 'Garlic.png',
+    'evoSynergy': [_0x5037ae['REGEN']],
+    'evoInto': _0x5037ae[_0x114511(0x414)],
+    'isUnlocked': !0x1,
+    'poolLimit': 0x32,
+    'rarity': 0x46,
+    'interval': 0x514,
+    'repeatInterval': 0x0,
+    'power': 0.5,
+    'area': 0x1,
+    'speed': 0x1,
+    'amount': 0x1,
+    'knockback': 0x0,
+    'hitsWalls': !0x1
+  }, {
+    'area': 0.4,
+    'power': 0.2
+  }, {
+    'interval': -0x64,
+    'power': 0.1
+  }, {
+    'area': 0.2,
+    'power': 0.1
+  }, {
+    'interval': -0x64,
+    'power': 0.2
+  }, {
+    'area': 0.2,
+    'power': 0.1
+  }, {
+    'interval': -0x64,
+    'power': 0.1
+  }, {
+    'area': 0.2,
+    'power': 0.2,
+    'addEvolvedWeapon': _0x5037ae[_0x114511(0x414)]
+  }],
+  [_0x5037ae['VORTEX']]: [{
+    'level': 0x1,
+    'bulletType': _0x5037ae[_0x114511(0x414)],
+    'name': 'Soul Eater',
+    'description': 'Evolved Garlic. Steals hearts. Power increases when recovering HP.',
+    'tips': 'Requires: Pummarola.',
+    'texture': 'items',
+    'frameName': 'OrbOrange.png',
+    'isEvolution': !0x0,
+    'isUnlocked': !0x1,
+    'poolLimit': 0x32,
+    'rarity': 0x1,
+    'evolvesFrom': [_0x5037ae[_0x114511(0xb7a)]],
+    'requires': [_0x5037ae['REGEN']],
+    'interval': 0x3e8,
+    'hitVFX': _0x343cf6[_0x114511(0x1ce)],
+    'repeatInterval': 0x0,
+    'power': 0x2,
+    'area': 0x3,
+    'speed': 0x1,
+    'amount': 0x1,
+    'knockback': 0x0,
+    'hitsWalls': !0x1
+  }],
+  [_0x5037ae[_0x114511(0x1a3)]]: [{
+    'level': 0x1,
+    'bulletType': _0x5037ae[_0x114511(0x1a3)],
+    'name': 'Santa Water',
+    'description': 'Generates damaging zones.',
+    'tips': 'Ignores: speed.',
+    'texture': 'items',
+    'frameName': 'HolyWater.png',
+    'evoSynergy': [_0x5037ae[_0x114511(0xccb)]],
+    'evoInto': _0x5037ae[_0x114511(0x19b)],
+    'isUnlocked': !0x0,
+    'poolLimit': 0x14,
+    'rarity': 0x64,
+    'interval': 0x1194,
+    'repeatInterval': 0x12c,
+    'power': 0x1,
+    'area': 0x1,
+    'speed': 0x1,
+    'amount': 0x1,
+    'duration': 0x7d0,
+    'hitBoxDelay': 0x1f4,
+    'knockback': 0x0,
+    'hitsWalls': !0x1
+  }, {
+    'amount': 0x1,
+    'area': 0.2
+  }, {
+    'power': 0x1,
+    'duration': 0x1f4
+  }, {
+    'amount': 0x1,
+    'area': 0.2
+  }, {
+    'power': 0x1,
+    'duration': 0xfa
+  }, {
+    'amount': 0x1,
+    'area': 0.2
+  }, {
+    'power': 0.5,
+    'duration': 0xfa
+  }, {
+    'power': 0.5,
+    'area': 0.2,
+    'addEvolvedWeapon': _0x5037ae['BORA']
+  }],
+  [_0x5037ae['BORA']]: [{
+    'level': 0x1,
+    'bulletType': _0x5037ae[_0x114511(0x19b)],
+    'name': 'La Borra',
+    'description': 'Evolved Santa Water. Damaging zones follow you and grow when they move.',
+    'tips': 'Requires: Attractorb.',
+    'texture': 'items',
+    'frameName': 'Water2.png',
+    'isEvolution': !0x0,
+    'evolvesFrom': [_0x5037ae['HOLYWATER']],
+    'requires': [_0x5037ae[_0x114511(0xccb)]],
+    'hitVFX': _0x343cf6[_0x114511(0x96e)],
+    'isEvolution': !0x0,
+    'isUnlocked': !0x1,
+    'poolLimit': 0x1e,
+    'rarity': 0x1,
+    'interval': 0xfa0,
+    'repeatInterval': 0x12c,
+    'power': 0x4,
+    'area': 0x2,
+    'speed': 0x1,
+    'amount': 0x4,
+    'duration': 0xfa0,
+    'hitBoxDelay': 0x1f4,
+    'knockback': 0x0,
+    'hitsWalls': !0x1
+  }],
+  [_0x5037ae[_0x114511(0x73f)]]: [{
+    'level': 0x1,
+    'bulletType': _0x5037ae[_0x114511(0x73f)],
+    'name': 'Runetracer',
+    'description': 'Passes through enemies, bounces around.',
+    'tips': 'Best with: speed, duration.',
+    'texture': 'items',
+    'frameName': 'Diamond2.png',
+    'evoSynergy': [_0x5037ae['ARMOR']],
+    'evoInto': _0x5037ae[_0x114511(0xdff)],
+    'isUnlocked': !0x1,
+    'poolLimit': 0x19,
+    'rarity': 0x50,
+    'interval': 0xbb8,
+    'repeatInterval': 0xc8,
+    'power': 0x1,
+    'area': 0x1,
+    'speed': 0x1,
+    'amount': 0x1,
+    'duration': 0x8ca,
+    'hitBoxDelay': 0x1f4,
+    'intervalDependsOnDuration': !0x1
+  }, {
+    'power': 0.5,
+    'speed': 0.2
+  }, {
+    'power': 0.5,
+    'duration': 0xfa
+  }, {
+    'amount': 0x1
+  }, {
+    'power': 0.5,
+    'speed': 0.2
+  }, {
+    'power': 0.5,
+    'duration': 0xfa
+  }, {
+    'amount': 0x1
+  }, {
+    'duration': 0x1f4,
+    'addEvolvedWeapon': _0x5037ae['ROCHER']
+  }],
+  [_0x5037ae[_0x114511(0xdff)]]: [{
+    'level': 0x1,
+    'bulletType': _0x5037ae['ROCHER'],
+    'name': 'NO FUTURE',
+    'description': 'Evolved Runetracer. Explodes when bouncing and in retaliation.',
+    'tips': 'Requires: Armor',
+    'texture': 'items',
+    'frameName': 'Carnage.png',
+    'isEvolution': !0x0,
+    'evolvesFrom': [_0x5037ae['DIAMOND']],
+    'requires': [_0x5037ae[_0x114511(0x3a3)]],
+    'hitVFX': _0x343cf6['LIGHT'],
+    'hidden': !0x1,
+    'isUnlocked': !0x1,
+    'poolLimit': 0x28,
+    'rarity': 0x1,
+    'interval': 0x3e8,
+    'repeatInterval': 0x0,
+    'power': 0x3,
+    'area': 0x1,
+    'speed': 2.8,
+    'amount': 0x1,
+    'duration': 0xbb8,
+    'hitBoxDelay': 0x1f4,
+    'intervalDependsOnDuration': !0x0
+  }],
+  [_0x5037ae['LIGHTNING']]: [{
+    'level': 0x1,
+    'bulletType': _0x5037ae[_0x114511(0xa03)],
+    'name': 'Lightning Ring',
+    'description': 'Strikes at random enemies.',
+    'tips': 'Ignores: speed, duration.',
+    'texture': 'items',
+    'frameName': 'LighningRing.png',
+    'evoSynergy': [_0x5037ae[_0x114511(0xcda)]],
+    'evoInto': _0x5037ae[_0x114511(0xe5b)],
+    'isUnlocked': !0x1,
+    'poolLimit': 0x32,
+    'rarity': 0x50,
+    'interval': 0x1194,
+    'repeatInterval': 0x32,
+    'power': 1.5,
+    'area': 0x1,
+    'speed': 0x1,
+    'amount': 0x2,
+    'hitsWalls': !0x1
+  }, {
+    'amount': 0x1
+  }, {
+    'area': 0x1,
+    'power': 0x1
+  }, {
+    'amount': 0x1
+  }, {
+    'area': 0x1,
+    'power': 0x2
+  }, {
+    'amount': 0x1
+  }, {
+    'area': 0x1,
+    'power': 0x2
+  }, {
+    'amount': 0x1,
+    'addEvolvedWeapon': _0x5037ae[_0x114511(0xe5b)]
+  }],
+  [_0x5037ae[_0x114511(0xe5b)]]: [{
+    'level': 0x1,
+    'bulletType': _0x5037ae['LOOP'],
+    'name': 'Thunder Loop',
+    'description': 'Evolved Lightning Ring. Projectiles strike twice.',
+    'tips': 'Requires: Duplicator.',
+    'texture': 'items',
+    'frameName': 'Thunderloop.png',
+    'evolvesFrom': [_0x5037ae[_0x114511(0xa03)]],
+    'requires': [_0x5037ae[_0x114511(0xcda)]],
+    'isEvolution': !0x0,
+    'isUnlocked': !0x1,
+    'repeatInterval': 0x0,
+    'poolLimit': 0x32,
+    'rarity': 0x1,
+    'interval': 0x1194,
+    'power': 6.5,
+    'area': 0x4,
+    'speed': 0x1,
+    'amount': 0x6,
+    'hitsWalls': !0x1
+  }],
+  [_0x5037ae[_0x114511(0x2b5)]]: [{
+    'level': 0x1,
+    'bulletType': _0x5037ae['PENTAGRAM'],
+    'name': 'Pentagram',
+    'description': 'Erases everything in sight.',
+    'tips': 'Best with: cooldown and luck only.',
+    'texture': 'items',
+    'frameName': 'Pentagram.png',
+    'evoSynergy': [_0x5037ae[_0x114511(0xc01)]],
+    'evoInto': _0x5037ae['SIRE'],
+    'isUnlocked': !0x1,
+    'poolLimit': 0xa,
+    'rarity': 0x3c,
+    'interval': 0x15f90,
+    'repeatInterval': 0x0,
+    'power': 0x0,
+    'area': 0x1,
+    'speed': 0x1,
+    'amount': 0x1,
+    'knockback': -0x2,
+    'chance': 0.1,
+    'hitsWalls': !0x1
+  }, {
+    'interval': -0x2710
+  }, {
+    'chance': 0.15,
+    'desc': '25% chance to not erase items.'
+  }, {
+    'interval': -0x2710
+  }, {
+    'chance': 0.2,
+    'desc': '45% chance to not erase items.'
+  }, {
+    'interval': -0x1388
+  }, {
+    'chance': 0.2,
+    'desc': '65% chance to not erase items.'
+  }, {
+    'interval': -0x1388,
+    'addEvolvedWeapon': _0x5037ae[_0x114511(0xa39)]
+  }],
+  [_0x5037ae[_0x114511(0xa39)]]: [{
+    'level': 0x1,
+    'bulletType': _0x5037ae[_0x114511(0xa39)],
+    'name': 'Gorgeous Moon',
+    'description': 'Evolved Pentagram. Generates extra gems and gathers all of them.',
+    'tips': 'Requires: Crown.',
+    'texture': 'items',
+    'frameName': 'Pentagram2.png',
+    'isUnlocked': !0x0,
+    'isEvolution': !0x0,
+    'evolvesFrom': [_0x5037ae['PENTAGRAM']],
+    'requires': [_0x5037ae['GROWTH']],
+    'rarity': 0x1,
+    'interval': 0xea60,
+    'repeatInterval': 0x0,
+    'power': 0x0,
+    'area': 0x1,
+    'speed': 0x1,
+    'amount': 0x1,
+    'knockback': 0x1,
+    'chance': 0x1,
+    'hitsWalls': !0x1
+  }],
+  [_0x5037ae[_0x114511(0x6df)]]: [{
+    'level': 0x1,
+    'bulletType': _0x5037ae['SILF'],
+    'name': 'Peachone',
+    'description': 'Bombards in a circling zone.',
+    'tips': 'Best with: cooldown, duration.',
+    'texture': 'items',
+    'frameName': 'Silf1.png',
+    'hitVFX': _0x343cf6[_0x114511(0x96e)],
+    'isUnlocked': !0x1,
+    'poolLimit': 0x3c,
+    'rarity': 0x32,
+    'interval': 0x3e8,
+    'repeatInterval': 0x19,
+    'power': 0x1,
+    'area': 0x1,
+    'speed': 0.8,
+    'amount': 0x4,
+    'duration': 0xfa0,
+    'knockback': 0x2,
+    'hitsWalls': !0x1
+  }, {
+    'amount': 0x1,
+    'area': 0.4
+  }, {
+    'amount': 0x1,
+    'power': 0x1
+  }, {
+    'amount': 0x1,
+    'interval': -0xfa
+  }, {
+    'amount': 0x1,
+    'area': 0.4
+  }, {
+    'amount': 0x1,
+    'power': 0x1
+  }, {
+    'amount': 0x1,
+    'interval': -0xfa
+  }, {
+    'amount': 0x1,
+    'area': 0.4
+  }],
+  [_0x5037ae[_0x114511(0x3e5)]]: [{
+    'level': 0x1,
+    'bulletType': _0x5037ae['SILF2'],
+    'name': 'Ebony Wings',
+    'description': 'Bombards in a circling zone.',
+    'tips': 'Best with: cooldown, duration.',
+    'texture': 'items',
+    'frameName': 'Silf2.png',
+    'hitVFX': _0x343cf6['DARK'],
+    'isUnlocked': !0x1,
+    'poolLimit': 0x3c,
+    'rarity': 0x32,
+    'interval': 0x3e8,
+    'repeatInterval': 0x19,
+    'power': 0x1,
+    'area': 0x1,
+    'speed': 0.8,
+    'amount': 0x4,
+    'duration': 0xfa0,
+    'knockback': 0x2,
+    'hitsWalls': !0x1
+  }, {
+    'amount': 0x1,
+    'area': 0.4
+  }, {
+    'amount': 0x1,
+    'power': 0x1
+  }, {
+    'amount': 0x1,
+    'interval': -0xfa
+  }, {
+    'amount': 0x1,
+    'area': 0.4
+  }, {
+    'amount': 0x1,
+    'power': 0x1
+  }, {
+    'amount': 0x1,
+    'interval': -0xfa
+  }, {
+    'amount': 0x1,
+    'area': 0.4,
+    'addEvolvedWeapon': _0x5037ae['SILF3']
+  }],
+  [_0x5037ae[_0x114511(0x789)]]: [{
+    'level': 0x1,
+    'bulletType': _0x5037ae[_0x114511(0x789)],
+    'name': 'Vandalier',
+    'description': 'Union of Ebony Wings and Peachone.',
+    'tips': '',
+    'texture': 'items',
+    'frameName': 'Silf3.png',
+    'isEvolution': !0x0,
+    'evolvesFrom': [_0x5037ae[_0x114511(0x6df)], _0x5037ae[_0x114511(0x3e5)]],
+    'requiresMax': [_0x5037ae['SILF']],
+    'hitVFX': _0x343cf6['PRISM'],
+    'hidden': !0x1,
+    'isUnlocked': !0x1,
+    'poolLimit': 0x50,
+    'rarity': 0x1,
+    'interval': 0x3e8,
+    'repeatInterval': 0x19,
+    'power': 2.8,
+    'area': 2.2,
+    'speed': 0x1,
+    'amount': 0x14,
+    'duration': 0xfa0,
+    'knockback': 0x2,
+    'hitsWalls': !0x1
+  }, {
+    'area': 0.2
+  }, {
+    'interval': -0xfa
+  }, {
+    'area': 0.2
+  }, {
+    'interval': -0xfa
+  }, {
+    'area': 0.2
+  }, {
+    'interval': -0xfa
+  }, {
+    'area': 0.2
+  }],
+  [_0x5037ae['GUNS']]: [{
+    'level': 0x1,
+    'bulletType': _0x5037ae['GUNS'],
+    'name': 'Phiera Der Tuphello',
+    'description': 'Fires quickly in four fixed directions.',
+    'tips': 'Ignores: duration.',
+    'texture': 'items',
+    'frameName': 'Guns.png',
+    'evoSynergy': [_0x5037ae[_0x114511(0x790)], _0x5037ae[_0x114511(0x234)]],
+    'evoInto': _0x5037ae[_0x114511(0xc38)],
+    'hitVFX': _0x343cf6[_0x114511(0x278)],
+    'isUnlocked': !0x1,
+    'poolLimit': 0x64,
+    'rarity': 0x32,
+    'interval': 0x578,
+    'repeatInterval': 0xc8,
+    'power': 0.5,
+    'area': 0x1,
+    'speed': 0x1,
+    'amount': 0x1,
+    'penetrating': 0x1,
+    'knockback': 0.1,
+    'critChance': 0.1,
+    'critMul': 0x2
+  }, {
+    'amount': 0x1
+  }, {
+    'penetrating': 0x2
+  }, {
+    'amount': 0x1
+  }, {
+    'power': 0.5
+  }, {
+    'penetrating': 0x2
+  }, {
+    'speed': 0.5,
+    'power': 0.5
+  }, {
+    'penetrating': 0x2
+  }],
+  [_0x5037ae['GUNS2']]: [{
+    'level': 0x1,
+    'bulletType': _0x5037ae[_0x114511(0x234)],
+    'name': 'Eight The Sparrow',
+    'description': 'Fires quickly in four fixed directions.',
+    'tips': 'Ignores: duration.',
+    'texture': 'items',
+    'frameName': 'Guns2.png',
+    'evoSynergy': [_0x5037ae['REVIVAL'], _0x5037ae[_0x114511(0xc92)]],
+    'evoInto': _0x5037ae['GUNS3'],
+    'hitVFX': _0x343cf6['BLUE'],
+    'isUnlocked': !0x1,
+    'poolLimit': 0x64,
+    'rarity': 0x32,
+    'interval': 0x578,
+    'repeatInterval': 0xc8,
+    'power': 0.5,
+    'area': 0x1,
+    'speed': 0x1,
+    'amount': 0x1,
+    'penetrating': 0x1,
+    'knockback': 0.1,
+    'critChance': 0.1,
+    'critMul': 0x2
+  }, {
+    'amount': 0x1
+  }, {
+    'penetrating': 0x2
+  }, {
+    'amount': 0x1
+  }, {
+    'power': 0.5
+  }, {
+    'penetrating': 0x2
+  }, {
+    'speed': 0.5,
+    'power': 0.5
+  }, {
+    'penetrating': 0x2,
+    'addEvolvedWeapon': _0x5037ae[_0x114511(0xc38)]
+  }],
+  [_0x5037ae[_0x114511(0xc38)]]: [{
+    'level': 0x1,
+    'bulletType': _0x5037ae['GUNS3'],
+    'name': 'Phieraggi',
+    'description': 'Union of Phiera Der Tuphello and Eight The Sparrow. Scales with Revivals.',
+    'tips': 'Requires: Tiragisú',
+    'texture': 'items',
+    'frameName': 'Guns3.png',
+    'isEvolution': !0x0,
+    'evolvesFrom': [_0x5037ae[_0x114511(0xc92)], _0x5037ae['GUNS2']],
+    'requires': [_0x5037ae['REVIVAL']],
+    'requiresMax': [_0x5037ae[_0x114511(0xc92)]],
+    'hitVFX': _0x343cf6['BEAM'],
+    'isUnlocked': !0x1,
+    'hitsWalls': !0x1,
+    'poolLimit': 0xc8,
+    'rarity': 0x1,
+    'interval': 0x578,
+    'repeatInterval': 0x64,
+    'hitBoxDelay': 0xc8,
+    'power': 1.5,
+    'area': 0x1,
+    'speed': 0x1,
+    'amount': 0x4,
+    'penetrating': 0x7,
+    'knockback': 0.05,
+    'critChance': 0.1,
+    'critMul': 0x2,
+    'hitsWalls': !0x1
+  }],
+  [_0x5037ae['GATTI']]: [{
+    'level': 0x1,
+    'bulletType': _0x5037ae[_0x114511(0x66e)],
+    'name': 'Gatti Amari',
+    'description': 'Summons capricious projectiles. Might interact with pickups.',
+    'tips': 'Best with: luck, floor chicken.',
+    'texture': 'items',
+    'frameName': 'Cat.png',
+    'evoSynergy': [_0x5037ae[_0x114511(0xe12)]],
+    'evoInto': _0x5037ae[_0x114511(0x1c5)],
+    'hitVFX': _0x343cf6[_0x114511(0x1ce)],
+    'isUnlocked': !0x1,
+    'poolLimit': 0x1e,
+    'rarity': 0x32,
+    'interval': 0x1388,
+    'repeatInterval': 0x12c,
+    'power': 0x1,
+    'duration': 0x1388,
+    'hitBoxDelay': 0x3e8,
+    'area': 0x1,
+    'speed': 0.4,
+    'amount': 0x1,
+    'chance': 0.1,
+    'knockback': 0.1,
+    'hitsWalls': !0x0
+  }, {
+    'speed': 0.2
+  }, {
+    'duration': 0x5dc
+  }, {
+    'speed': 0.2
+  }, {
+    'amount': 0x1
+  }, {
+    'duration': 0x5dc
+  }, {
+    'speed': 0.2
+  }, {
+    'amount': 0x1,
+    'addEvolvedWeapon': _0x5037ae[_0x114511(0x1c5)]
+  }],
+  [_0x5037ae['STIGRANGATTI']]: [{
+    'level': 0x1,
+    'bulletType': _0x5037ae[_0x114511(0x1c5)],
+    'name': 'Vicious Hunger',
+    'description': 'Evolved Gatti Amari. Might turn anything into gold.',
+    'tips': 'Requires: Stone Mask.',
+    'texture': 'items',
+    'frameName': 'cateye.png',
+    'evolvesFrom': [_0x5037ae[_0x114511(0x66e)]],
+    'requires': [_0x5037ae[_0x114511(0xe12)]],
+    'hitVFX': _0x343cf6['EVIL'],
+    'isEvolution': !0x0,
+    'isUnlocked': !0x1,
+    'poolLimit': 0x1e,
+    'rarity': 0x1,
+    'interval': 0x1f40,
+    'repeatInterval': 0x12c,
+    'power': 0x3,
+    'duration': 0x1b58,
+    'hitBoxDelay': 0x3e8,
+    'area': 0x1,
+    'speed': 0x1,
+    'amount': 0x2,
+    'chance': 0.1,
+    'knockback': 0.1,
+    'hitsWalls': !0x0
+  }],
+  [_0x5037ae[_0x114511(0xb9d)]]: [{
+    'level': 0x1,
+    'bulletType': _0x5037ae[_0x114511(0xb9d)],
+    'name': 'Song Of Mana',
+    'description': 'Attacks vertically, passes through enemies.',
+    'tips': 'Ignores: amount, speed.',
+    'texture': 'items',
+    'frameName': 'Song.png',
+    'evoSynergy': [_0x5037ae[_0x114511(0xc9b)]],
+    'evoInto': _0x5037ae['MANNAGGIA'],
+    'hitVFX': _0x343cf6[_0x114511(0x759)],
+    'isUnlocked': !0x1,
+    'poolLimit': 0xa,
+    'rarity': 0x32,
+    'interval': 0x7d0,
+    'repeatInterval': 0x64,
+    'power': 0x1,
+    'duration': 0x1f4,
+    'hitBoxDelay': 0x3e8,
+    'area': 0x1,
+    'speed': 0x1,
+    'amount': 0x1,
+    'hitsWalls': !0x1
+  }, {
+    'area': 0x1
+  }, {
+    'interval': 0x2ee,
+    'duration': 0x1f4
+  }, {
+    'power': 0x1,
+    'area': 0.25
+  }, {
+    'interval': 0x2ee,
+    'duration': 0x1f4
+  }, {
+    'power': 0x1,
+    'area': 0.25
+  }, {
+    'interval': 0x2ee,
+    'duration': 0x1f4
+  }, {
+    'power': 0x1,
+    'area': 0.25,
+    'addEvolvedWeapon': _0x5037ae[_0x114511(0xd3e)]
+  }],
+  [_0x5037ae['MANNAGGIA']]: [{
+    'level': 0x1,
+    'bulletType': _0x5037ae['MANNAGGIA'],
+    'name': 'Mannajja',
+    'description': 'Evolved Song of Mana. Might slow enemies down.',
+    'tips': 'Requires: Skull O\'Maniac',
+    'texture': 'items',
+    'frameName': 'Song2.png',
+    'evolvesFrom': [_0x5037ae['SONG']],
+    'requires': [_0x5037ae[_0x114511(0xc9b)]],
+    'isEvolution': !0x0,
+    'hitVFX': _0x343cf6[_0x114511(0x759)],
+    'isUnlocked': !0x1,
+    'poolLimit': 0xa,
+    'rarity': 0x1,
+    'interval': 0x1194,
+    'repeatInterval': 0x64,
+    'power': 0x4,
+    'duration': 0x7d0,
+    'hitBoxDelay': 0x3e8,
+    'area': 0x6,
+    'speed': 0x1,
+    'amount': 0x1,
+    'hitsWalls': !0x1
+  }],
+  [_0x5037ae['TRAPANO']]: [{
+    'level': 0x1,
+    'bulletType': _0x5037ae['TRAPANO'],
+    'name': 'Shadow Pinion',
+    'description': 'Generates damaging zones when moving, strikes when stopping.',
+    'tips': 'Best with: moveSpeed.',
+    'texture': 'items',
+    'frameName': 'trapano.png',
+    'isUnlocked': !0x1,
+    'evoSynergy': [_0x5037ae['MOVESPEED']],
+    'evoInto': _0x5037ae['TRAPANO2'],
+    'hitVFX': _0x343cf6[_0x114511(0x1ce)],
+    'poolLimit': 0x64,
+    'rarity': 0x32,
+    'interval': 0x1770,
+    'repeatInterval': 0x12c,
+    'hitBoxDelay': 0x7d0,
+    'power': 0x1,
+    'area': 0x1,
+    'speed': 0x1,
+    'amount': 0x1,
+    'duration': 0x3e8,
+    'hitsWalls': !0x1
+  }, {
+    'amount': 0x1
+  }, {
+    'power': 0.5
+  }, {
+    'duration': 0xfa
+  }, {
+    'power': 0.5
+  }, {
+    'duration': 0xfa
+  }, {
+    'power': 0.5
+  }, {
+    'duration': 0xfa,
+    'addEvolvedWeapon': _0x5037ae[_0x114511(0xd2a)]
+  }],
+  [_0x5037ae['TRAPANO2']]: [{
+    'level': 0x1,
+    'bulletType': _0x5037ae['TRAPANO2'],
+    'name': 'Valkyrie Turner',
+    'description': 'Evolved Shadow Pinion. Bigger, longer, faster, stronger.',
+    'tips': 'Requires: Wings.',
+    'texture': 'items',
+    'frameName': 'trapano2.png',
+    'isUnlocked': !0x1,
+    'evolvesFrom': [_0x5037ae['TRAPANO']],
+    'requires': [_0x5037ae['MOVESPEED']],
+    'hitVFX': _0x343cf6[_0x114511(0x979)],
+    'isEvolution': !0x0,
+    'poolLimit': 0x64,
+    'rarity': 0x1,
+    'interval': 0x1770,
+    'repeatInterval': 0x12c,
+    'hitBoxDelay': 0x7d0,
+    'power': 3.5,
+    'area': 1.4,
+    'speed': 3.5,
+    'amount': 0x1,
+    'duration': 0x7d0,
+    'hitsWalls': !0x1
+  }],
+  [_0x5037ae[_0x114511(0x8b6)]]: [{
+    'level': 0x1,
+    'bulletType': _0x5037ae[_0x114511(0x8b6)],
+    'name': 'Clock Lancet',
+    'description': 'Chance to freeze enemies in time.',
+    'tips': 'Ignores: power, speed, amount, area.',
+    'texture': 'items',
+    'frameName': 'Lancet.png',
+    'hitVFX': _0x343cf6['TIMEFREEZE'],
+    'isUnlocked': !0x1,
+    'poolLimit': 0xa,
+    'rarity': 0x46,
+    'interval': 0x7d0,
+    'repeatInterval': 0x0,
+    'power': 0x0,
+    'area': 0x1,
+    'speed': 0x1,
+    'amount': 0x1,
+    'duration': 0x7d0,
+    'knockback': 0x0,
+    'hitsWalls': !0x1
+  }, {
+    'duration': 0x3e8
+  }, {
+    'interval': -0x1f4
+  }, {
+    'duration': 0x3e8
+  }, {
+    'duration': 0x3e8
+  }, {
+    'interval': -0x1f4
+  }, {
+    'duration': 0x3e8,
+    'addEvolvedWeapon': _0x5037ae[_0x114511(0xccc)]
+  }],
+  [_0x5037ae['CORRIDOR']]: [{
+    'level': 0x1,
+    'bulletType': _0x5037ae[_0x114511(0xccc)],
+    'name': 'Infinite Corridor',
+    'description': 'Evolved Clock Lancet. Halves enemies health.',
+    'tips': 'Requires: Gold Ring, Silver Ring.',
+    'texture': 'items',
+    'frameName': 'portal.png',
+    'hitVFX': _0x343cf6[_0x114511(0x96e)],
+    'isEvolution': !0x0,
+    'evolvesFrom': [_0x5037ae[_0x114511(0x8b6)]],
+    'requires': [_0x5037ae['GOLD'], _0x5037ae[_0x114511(0x744)]],
+    'requiresMax': [_0x5037ae['GOLD'], _0x5037ae[_0x114511(0x744)]],
+    'isUnlocked': !0x1,
+    'poolLimit': 0xa,
+    'rarity': 0x1,
+    'interval': 0x3e8,
+    'repeatInterval': 0x0,
+    'power': 0x0,
+    'area': 0x1,
+    'speed': 0x1,
+    'amount': 0x1,
+    'duration': 0x1770,
+    'knockback': 0x0,
+    'hitsWalls': !0x1
+  }],
+  [_0x5037ae['LAUREL']]: [{
+    'level': 0x1,
+    'bulletType': _0x5037ae[_0x114511(0x674)],
+    'name': 'Laurel',
+    'description': 'Shields from damage when active.',
+    'tips': 'Best with: cooldown only.',
+    'texture': 'items',
+    'frameName': 'Laurel.png',
+    'isUnlocked': !0x0,
+    'poolLimit': 0x5,
+    'rarity': 0x3c,
+    'interval': 0x2710,
+    'repeatInterval': 0x0,
+    'power': 0x1,
+    'area': 0x1,
+    'speed': 0x1,
+    'amount': 0x1,
+    'charges': 0x1,
+    'hitsWalls': !0x1
+  }, {
+    'interval': -0x1f4,
+    'shieldInvulTime': 0xc8
+  }, {
+    'interval': -0x1f4,
+    'shieldInvulTime': 0xc8
+  }, {
+    'charges': 0x1
+  }, {
+    'interval': -0x1f4,
+    'shieldInvulTime': 0xc8
+  }, {
+    'interval': -0x1f4,
+    'shieldInvulTime': 0xc8
+  }, {
+    'charges': 0x1,
+    'addEvolvedWeapon': _0x5037ae[_0x114511(0x6bd)]
+  }],
+  [_0x5037ae[_0x114511(0x6bd)]]: [{
+    'level': 0x1,
+    'bulletType': _0x5037ae[_0x114511(0x6bd)],
+    'name': 'Crimson Shroud',
+    'description': 'Evolved Laurel. Caps incoming damage at 10. Retaliates when losing charges.',
+    'tips': 'Requires: Metaglio Left, Metaglio Right.',
+    'texture': 'items',
+    'frameName': 'cape.png',
+    'hitVFX': _0x343cf6[_0x114511(0xabc)],
+    'isEvolution': !0x0,
+    'evolvesFrom': [_0x5037ae[_0x114511(0x674)]],
+    'requires': [_0x5037ae[_0x114511(0x243)], _0x5037ae[_0x114511(0xc60)]],
+    'requiresMax': [_0x5037ae['LEFT'], _0x5037ae[_0x114511(0xc60)]],
+    'isUnlocked': !0x1,
+    'rarity': 0x1,
+    'interval': 0x1f40,
+    'repeatInterval': 0x64,
+    'knockback': 0x14,
+    'power': 0x0,
+    'area': 0x2,
+    'speed': 0x1,
+    'amount': 0x1,
+    'charges': 0x3
+  }],
+  [_0x5037ae['VENTO']]: [{
+    'level': 0x1,
+    'bulletType': _0x5037ae[_0x114511(0xdda)],
+    'name': 'Vento Sacro',
+    'description': 'Stronger with continuous movement. Can deal critical damage.',
+    'tips': 'Best with: Luck, MoveSpeed.',
+    'texture': 'items',
+    'frameName': 'Whip3.png',
+    'evoSynergy': [_0x5037ae[_0x114511(0x507)]],
+    'evoInto': _0x5037ae[_0x114511(0x5e6)],
+    'isUnlocked': !0x1,
+    'poolLimit': 0x78,
+    'rarity': 0x32,
+    'interval': 0x7d0,
+    'repeatInterval': 0x32,
+    'power': 0.1,
+    'area': 0x1,
+    'speed': 0x1,
+    'amount': 0x4,
+    'duration': 0x1,
+    'hitsWalls': !0x1,
+    'critChance': 0.05,
+    'critMul': 0x2
+  }, {
+    'power': 0.1
+  }, {
+    'area': 0.33,
+    'amount': 0x1
+  }, {
+    'power': 0.1
+  }, {
+    'area': 0.33,
+    'amount': 0x1
+  }, {
+    'power': 0.1
+  }, {
+    'area': 0.33,
+    'amount': 0x1
+  }, {
+    'power': 0.1,
+    'addEvolvedWeapon': _0x5037ae[_0x114511(0x5e6)]
+  }],
+  [_0x5037ae['VENTO2']]: [{
+    'level': 0x1,
+    'bulletType': _0x5037ae['VENTO2'],
+    'name': 'Fuwalafuwaloo',
+    'description': 'Union of Vento Sacro and Bloody Tear. Critical hits might generate explosions.',
+    'tips': '',
+    'texture': 'items',
+    'frameName': 'Whip4.png',
+    'evolvesFrom': [_0x5037ae[_0x114511(0xdda)], _0x5037ae['VAMPIRICA']],
+    'requires': [_0x5037ae['VAMPIRICA']],
+    'requiresMax': [_0x5037ae[_0x114511(0x507)]],
+    'isEvolution': !0x0,
+    'isUnlocked': !0x0,
+    'poolLimit': 0x78,
+    'rarity': 0x32,
+    'interval': 0x7d0,
+    'repeatInterval': 0x32,
+    'power': 0x2,
+    'area': 0x2,
+    'speed': 0x2,
+    'amount': 0x8,
+    'duration': 0x1,
+    'hitsWalls': !0x1,
+    'critChance': 0.05,
+    'critMul': 0x2
+  }],
+  [_0x5037ae[_0x114511(0x3ea)]]: [{
+    'level': 0x1,
+    'bulletType': _0x5037ae['BONE'],
+    'name': 'Bone',
+    'description': 'Throws a bouncing projectile.',
+    'tips': 'Best with: duration, speed.',
+    'texture': 'items',
+    'frameName': 'Bone.png',
+    'isUnlocked': !0x1,
+    'poolLimit': 0x19,
+    'rarity': 0x1,
+    'interval': 0xbb8,
+    'repeatInterval': 0x0,
+    'power': 0.5,
+    'area': 1.2,
+    'speed': 0.75,
+    'amount': 0x1,
+    'duration': 0x7d0
+  }, {
+    'duration': 0xc8,
+    'area': 0.2
+  }, {
+    'power': 0x2,
+    'amount': 0x1
+  }, {
+    'speed': 0.5,
+    'area': 0.2
+  }, {
+    'power': 0x2,
+    'amount': 0x1
+  }, {
+    'duration': 0xc8
+  }, {
+    'power': 0x2
+  }, {
+    'duration': 0xc8,
+    'speed': 0.5
+  }],
+  [_0x5037ae[_0x114511(0xd21)]]: [{
+    'level': 0x1,
+    'bulletType': _0x5037ae[_0x114511(0xd21)],
+    'name': 'Cherry Bomb',
+    'description': 'Throws a bouncing projectile. Explodes, sometimes.',
+    'tips': 'Best with: luck.',
+    'texture': 'items',
+    'frameName': 'Cherry.png',
+    'isUnlocked': !0x1,
+    'poolLimit': 0x19,
+    'rarity': 0x1,
+    'interval': 0xbb8,
+    'repeatInterval': 0x12c,
+    'power': 0x1,
+    'area': 0x1,
+    'speed': 0x1,
+    'amount': 0x1,
+    'duration': 0x7d0,
+    'chance': 0.4
+  }, {
+    'area': 0.25,
+    'speed': 0.3
+  }, {
+    'chance': 0.1,
+    'desc': '50% chance to explode.'
+  }, {
+    'amount': 0x1
+  }, {
+    'area': 0.25,
+    'power': 0.5
+  }, {
+    'chance': 0.1,
+    'desc': '60% chance to explode.'
+  }, {
+    'area': 0.25,
+    'speed': 0.3
+  }, {
+    'area': 0.25,
+    'power': 0.5
+  }],
+  [_0x5037ae[_0x114511(0x6eb)]]: [{
+    'level': 0x1,
+    'bulletType': _0x5037ae[_0x114511(0x6eb)],
+    'name': 'Carréllo',
+    'description': 'Throws a bouncing projectile. Number of bounces affected by Amount.',
+    'tips': 'Ignores: duration.',
+    'texture': 'items',
+    'frameName': 'CartWheel.png',
+    'hidden': !0x1,
+    'isUnlocked': !0x1,
+    'poolLimit': 0x1e,
+    'rarity': 0x1,
+    'interval': 0x157c,
+    'hitsWalls': !0x0,
+    'power': 0x1,
+    'area': 0.6,
+    'speed': 0x1,
+    'amount': 0x2,
+    'chance': 0x1
+  }, {
+    'area': 0.2
+  }, {
+    'power': 0x3,
+    'interval': 0x12c
+  }, {
+    'speed': 0.5
+  }, {
+    'power': 0x3,
+    'interval': 0x12c
+  }, {
+    'area': 0.2
+  }, {
+    'power': 0x3,
+    'interval': 0x12c
+  }, {
+    'speed': 0.5
+  }],
+  [_0x5037ae[_0x114511(0x829)]]: [{
+    'level': 0x1,
+    'bulletType': _0x5037ae['FLOWER'],
+    'name': 'Celestial Dusting',
+    'description': 'Throws a bouncing projectile. Cooldown reduces when moving.',
+    'tips': 'Best with: moveSpeed.',
+    'texture': 'items',
+    'frameName': 'flower.png',
+    'isUnlocked': !0x1,
+    'hitVFX': _0x343cf6[_0x114511(0x759)],
+    'poolLimit': 0x64,
+    'rarity': 0x1,
+    'interval': 0x1770,
+    'repeatInterval': 0x64,
+    'hitBoxDelay': 0x12c,
+    'power': 0.5,
+    'area': 0x1,
+    'speed': 0.7,
+    'amount': 0x1,
+    'duration': 0x1f4,
+    'knockback': 0.1
+  }, {
+    'duration': 0x3e8
+  }, {
+    'speed': 0.3
+  }, {
+    'power': 0.5
+  }, {
+    'speed': 0.3
+  }, {
+    'amount': 0x1
+  }, {
+    'speed': 0.3
+  }, {
+    'desc': 'Defeated enemies might drop hearts.'
+  }],
+  [_0x5037ae['NDUJA']]: [{
+    'level': 0x1,
+    'bulletType': _0x5037ae[_0x114511(0x84d)],
+    'name': '',
+    'description': '',
+    'tips': '',
+    'texture': 'items',
+    'frameName': 'Nft1.png',
+    'hidden': !0x0,
+    'isUnlocked': !0x1,
+    'isSpecialOnly': !0x0,
+    'hitVFX': _0x343cf6[_0x114511(0x979)],
+    'poolLimit': 0x32,
+    'rarity': 0x0,
+    'interval': 0x1f4,
+    'repeatInterval': 0x28,
+    'power': 0x3,
+    'area': 0x2,
+    'speed': 0x3,
+    'amount': 0xc,
+    'duration': 0x3e8
+  }],
+  [_0x5037ae[_0x114511(0x2d5)]]: [{
+    'level': 0x1,
+    'bulletType': _0x5037ae[_0x114511(0x2d5)],
+    'name': '',
+    'description': '',
+    'tips': '',
+    'texture': 'items',
+    'frameName': 'CartWheel.png',
+    'hidden': !0x0,
+    'isUnlocked': !0x1,
+    'isSpecialOnly': !0x0,
+    'poolLimit': 0xa,
+    'rarity': 0x0,
+    'interval': 0x4e20,
+    'repeatInterval': 0x64,
+    'power': 0xa,
+    'area': 0x1,
+    'speed': 0x2,
+    'amount': 0x1,
+    'duration': 0x3e8
+  }],
+  [_0x5037ae['SARABANDE']]: [{
+    'level': 0x1,
+    'bulletType': _0x5037ae['SARABANDE'],
+    'name': '',
+    'description': '',
+    'tips': '',
+    'texture': 'items',
+    'frameName': 'Nft1.png',
+    'hidden': !0x0,
+    'isUnlocked': !0x1,
+    'isSpecialOnly': !0x0,
+    'hitVFX': _0x343cf6[_0x114511(0xa85)],
+    'poolLimit': 0x32,
+    'rarity': 0x0,
+    'interval': 0x1f4,
+    'repeatInterval': 0x32,
+    'power': 0x0,
+    'area': 0x4,
+    'speed': 0x1,
+    'amount': 0x1,
+    'duration': 0x12c
+  }],
+  [_0x5037ae[_0x114511(0x314)]]: [{
+    'level': 0x1,
+    'bulletType': _0x5037ae['WINDOW'],
+    'name': '',
+    'description': '',
+    'tips': '',
+    'texture': 'items',
+    'frameName': 'Nft1.png',
+    'hidden': !0x0,
+    'isUnlocked': !0x1,
+    'isSpecialOnly': !0x0,
+    'hitVFX': _0x343cf6['PRISM'],
+    'poolLimit': 0x32,
+    'rarity': 0x0,
+    'interval': 0x1388,
+    'repeatInterval': 0x1388,
+    'power': 0xd,
+    'area': 1.25,
+    'speed': 0x1,
+    'amount': 0x1,
+    'duration': 0x3e8
+  }],
+  [_0x5037ae['FIREEXPLOSION']]: [{
+    'level': 0x1,
+    'bulletType': _0x5037ae[_0x114511(0xc91)],
+    'name': '',
+    'description': '',
+    'tips': '',
+    'texture': 'items',
+    'frameName': 'Nft1.png',
+    'hidden': !0x0,
+    'isUnlocked': !0x1,
+    'isSpecialOnly': !0x0,
+    'hitVFX': _0x343cf6['NONE'],
+    'poolLimit': 0x32,
+    'rarity': 0x0,
+    'interval': 0x1f4,
+    'repeatInterval': 0x32,
+    'power': 0x1,
+    'area': 0x1,
+    'speed': 0x1,
+    'amount': 0x1,
+    'duration': 0x12c
+  }],
+  [_0x5037ae['COLDEXPLOSION']]: [{
+    'level': 0x1,
+    'bulletType': _0x5037ae[_0x114511(0xe29)],
+    'name': '',
+    'description': '',
+    'tips': '',
+    'texture': 'items',
+    'frameName': 'Nft1.png',
+    'hidden': !0x0,
+    'isUnlocked': !0x1,
+    'isSpecialOnly': !0x0,
+    'hitVFX': _0x343cf6['TIMEFREEZE'],
+    'poolLimit': 0x12c,
+    'rarity': 0x0,
+    'interval': 0x1f4,
+    'repeatInterval': 0x32,
+    'power': 0x1,
+    'area': 0x1,
+    'speed': 0x1,
+    'amount': 0x1,
+    'duration': 0x12c
+  }],
+  [_0x5037ae[_0x114511(0xcc0)]]: [{
+    'level': 0x1,
+    'bulletType': _0x5037ae['MIGHT'],
+    'name': 'Spinach',
+    'description': 'Raises inflicted damage by 10%.',
+    'texture': 'items',
+    'frameName': 'Leaf.png',
+    'evoSynergy': [_0x5037ae[_0x114511(0x9cf)]],
+    'evoInto': _0x5037ae[_0x114511(0x1a8)],
+    'isUnlocked': !0x0,
+    'rarity': 0x64,
+    'isPowerUp': !0x0,
+    'power': 0.1
+  }, {
+    'power': 0.1
+  }, {
+    'power': 0.1
+  }, {
+    'power': 0.1
+  }, {
+    'power': 0.1
+  }],
+  [_0x5037ae['ARMOR']]: [{
+    'level': 0x1,
+    'bulletType': _0x5037ae['ARMOR'],
+    'name': 'Armor',
+    'description': 'Reduces incoming damage by 1. Increases retaliatory damage by 10%.',
+    'texture': 'items',
+    'frameName': 'ArmorIron.png',
+    'evoSynergy': [_0x5037ae['DIAMOND']],
+    'evoInto': _0x5037ae['ROCHER'],
+    'isUnlocked': !0x0,
+    'rarity': 0x64,
+    'isPowerUp': !0x0,
+    'armor': 0x1
+  }, {
+    'armor': 0x1
+  }, {
+    'armor': 0x1
+  }, {
+    'armor': 0x1
+  }, {
+    'armor': 0x1
+  }],
+  [_0x5037ae[_0x114511(0xe68)]]: [{
+    'level': 0x1,
+    'bulletType': _0x5037ae[_0x114511(0xe68)],
+    'name': 'Hollow Heart',
+    'description': 'Augments max health by 20%.',
+    'texture': 'items',
+    'frameName': 'HeartBlack.png',
+    'evoSynergy': [_0x5037ae[_0x114511(0xb08)]],
+    'evoInto': _0x5037ae['VAMPIRICA'],
+    'isUnlocked': !0x1,
+    'rarity': 0x5a,
+    'isPowerUp': !0x0,
+    'maxHp': 0.2
+  }, {
+    'maxHp': 0.2
+  }, {
+    'maxHp': 0.2
+  }, {
+    'maxHp': 0.2
+  }, {
+    'maxHp': 0.2
+  }],
+  [_0x5037ae['REGEN']]: [{
+    'level': 0x1,
+    'hidden': !0x1,
+    'bulletType': _0x5037ae[_0x114511(0x938)],
+    'name': 'Pummarola',
+    'description': 'Character recovers 0.2 HP per second.',
+    'texture': 'items',
+    'frameName': 'HeartRuby.png',
+    'evoSynergy': [_0x5037ae[_0x114511(0xb7a)]],
+    'evoInto': _0x5037ae[_0x114511(0x414)],
+    'isUnlocked': !0x1,
+    'rarity': 0x5a,
+    'isPowerUp': !0x0,
+    'regen': 0.2
+  }, {
+    'regen': 0.2
+  }, {
+    'regen': 0.2
+  }, {
+    'regen': 0.2
+  }, {
+    'regen': 0.2
+  }],
+  [_0x5037ae['COOLDOWN']]: [{
+    'level': 0x1,
+    'bulletType': _0x5037ae['COOLDOWN'],
+    'name': 'Empty Tome',
+    'description': 'Reduces weapons cooldown by 8%.',
+    'texture': 'items',
+    'frameName': 'Book2.png',
+    'evoSynergy': [_0x5037ae['MAGIC_MISSILE']],
+    'evoInto': _0x5037ae[_0x114511(0x453)],
+    'isUnlocked': !0x1,
+    'rarity': 0x32,
+    'isPowerUp': !0x0,
+    'cooldown': -0.08
+  }, {
+    'cooldown': -0.08
+  }, {
+    'cooldown': -0.08
+  }, {
+    'cooldown': -0.08
+  }, {
+    'cooldown': -0.08
+  }],
+  [_0x5037ae['AREA']]: [{
+    'level': 0x1,
+    'bulletType': _0x5037ae[_0x114511(0x4d5)],
+    'name': 'Candelabrador',
+    'description': 'Augments area of attacks by 10%.',
+    'texture': 'items',
+    'frameName': 'Candelabra.png',
+    'evoSynergy': [_0x5037ae['AXE']],
+    'evoInto': _0x5037ae[_0x114511(0x62e)],
+    'isUnlocked': !0x1,
+    'rarity': 0x64,
+    'isPowerUp': !0x0,
+    'area': 0.1
+  }, {
+    'area': 0.1
+  }, {
+    'area': 0.1
+  }, {
+    'area': 0.1
+  }, {
+    'area': 0.1
+  }],
+  [_0x5037ae[_0x114511(0x7a6)]]: [{
+    'level': 0x1,
+    'bulletType': _0x5037ae['SPEED'],
+    'name': 'Bracer',
+    'description': 'Increases projectiles speed by 10%.',
+    'texture': 'items',
+    'frameName': 'Gauntlet.png',
+    'evoSynergy': [_0x5037ae['KNIFE']],
+    'evoInto': _0x5037ae[_0x114511(0x533)],
+    'isUnlocked': !0x1,
+    'rarity': 0x64,
+    'isPowerUp': !0x0,
+    'speed': 0.1
+  }, {
+    'speed': 0.1
+  }, {
+    'speed': 0.1
+  }, {
+    'speed': 0.1
+  }, {
+    'speed': 0.1
+  }],
+  [_0x5037ae['DURATION']]: [{
+    'level': 0x1,
+    'bulletType': _0x5037ae['DURATION'],
+    'name': 'Spellbinder',
+    'description': 'Increases duration of weapon effects by 10%.',
+    'texture': 'items',
+    'frameName': 'EmblemEye.png',
+    'evoSynergy': [_0x5037ae['HOLYBOOK']],
+    'evoInto': _0x5037ae['VESPERS'],
+    'isUnlocked': !0x1,
+    'rarity': 0x64,
+    'isPowerUp': !0x0,
+    'duration': 0.1
+  }, {
+    'duration': 0.1
+  }, {
+    'duration': 0.1
+  }, {
+    'duration': 0.1
+  }, {
+    'duration': 0.1
+  }],
+  [_0x5037ae[_0x114511(0xcda)]]: [{
+    'level': 0x1,
+    'bulletType': _0x5037ae[_0x114511(0xcda)],
+    'name': 'Duplicator',
+    'description': 'Weapons fire more projectiles.',
+    'texture': 'items',
+    'frameName': 'Ring.png',
+    'evoSynergy': [_0x5037ae[_0x114511(0xa03)]],
+    'evoInto': _0x5037ae['LOOP'],
+    'isUnlocked': !0x1,
+    'rarity': 0x32,
+    'isPowerUp': !0x0,
+    'amount': 0x1
+  }, {
+    'amount': 0x1
+  }],
+  [_0x5037ae['MOVESPEED']]: [{
+    'level': 0x1,
+    'bulletType': _0x5037ae['MOVESPEED'],
+    'name': 'Wings',
+    'description': 'Character moves 10% faster.',
+    'texture': 'items',
+    'frameName': 'Wing.png',
+    'evoSynergy': [_0x5037ae['TRAPANO']],
+    'evoInto': _0x5037ae[_0x114511(0xd2a)],
+    'isUnlocked': !0x1,
+    'rarity': 0x32,
+    'isPowerUp': !0x0,
+    'moveSpeed': 0.1
+  }, {
+    'moveSpeed': 0.1
+  }, {
+    'moveSpeed': 0.1
+  }, {
+    'moveSpeed': 0.1
+  }, {
+    'moveSpeed': 0.1
+  }],
+  [_0x5037ae[_0x114511(0xccb)]]: [{
+    'level': 0x1,
+    'bulletType': _0x5037ae[_0x114511(0xccb)],
+    'name': 'Attractorb',
+    'description': 'Character pickups items from further away.',
+    'texture': 'items',
+    'frameName': 'OrbGlow.png',
+    'evoSynergy': [_0x5037ae[_0x114511(0x1a3)]],
+    'evoInto': _0x5037ae['BORA'],
+    'isUnlocked': !0x1,
+    'rarity': 0x64,
+    'isPowerUp': !0x0,
+    'magnet': 0.5
+  }, {
+    'magnet': 0.33
+  }, {
+    'magnet': 0.25
+  }, {
+    'magnet': 0.2
+  }, {
+    'magnet': 0.33
+  }],
+  [_0x5037ae['LUCK']]: [{
+    'level': 0x1,
+    'bulletType': _0x5037ae['LUCK'],
+    'name': 'Clover',
+    'description': 'Character gets 10% luckier.',
+    'texture': 'items',
+    'frameName': 'Clover.png',
+    'evoSynergy': [_0x5037ae[_0x114511(0x185)]],
+    'evoInto': _0x5037ae['HEAVENSWORD'],
+    'isUnlocked': !0x1,
+    'rarity': 0x64,
+    'isPowerUp': !0x0,
+    'luck': 0.1
+  }, {
+    'luck': 0.1
+  }, {
+    'luck': 0.1
+  }, {
+    'luck': 0.1
+  }, {
+    'luck': 0.1
+  }],
+  [_0x5037ae['GROWTH']]: [{
+    'level': 0x1,
+    'bulletType': _0x5037ae[_0x114511(0xc01)],
+    'name': 'Crown',
+    'description': 'Character gains 8% more experience.',
+    'texture': 'items',
+    'frameName': 'Crown.png',
+    'evoSynergy': [_0x5037ae[_0x114511(0x2b5)]],
+    'evoInto': _0x5037ae['SIRE'],
+    'rarity': 0x46,
+    'isPowerUp': !0x0,
+    'growth': 0.08
+  }, {
+    'growth': 0.08
+  }, {
+    'growth': 0.08
+  }, {
+    'growth': 0.08
+  }, {
+    'growth': 0.08
+  }],
+  [_0x5037ae[_0x114511(0xe12)]]: [{
+    'level': 0x1,
+    'hidden': !0x1,
+    'bulletType': _0x5037ae['GREED'],
+    'name': 'Stone Mask',
+    'description': 'Character earns 10% more coins.',
+    'texture': 'items',
+    'frameName': 'Mask.png',
+    'evoSynergy': [_0x5037ae['GATTI']],
+    'evoInto': _0x5037ae['STIGRANGATTI'],
+    'isUnlocked': !0x1,
+    'rarity': 0x46,
+    'isPowerUp': !0x0,
+    'greed': 0.1
+  }, {
+    'greed': 0.1
+  }, {
+    'greed': 0.1
+  }, {
+    'greed': 0.1
+  }, {
+    'greed': 0.1
+  }],
+  [_0x5037ae[_0x114511(0xc9b)]]: [{
+    'level': 0x1,
+    'hidden': !0x1,
+    'bulletType': _0x5037ae['CURSE'],
+    'name': 'Skull O\'Maniac',
+    'description': 'Increases enemy speed, health, quantity, and frequency by 10%.',
+    'texture': 'items',
+    'frameName': 'Curse.png',
+    'evoSynergy': [_0x5037ae[_0x114511(0xb9d)]],
+    'evoInto': _0x5037ae[_0x114511(0xd3e)],
+    'isUnlocked': !0x1,
+    'rarity': 0x28,
+    'isPowerUp': !0x0,
+    'curse': 0.1
+  }, {
+    'curse': 0.1
+  }, {
+    'curse': 0.1
+  }, {
+    'curse': 0.1
+  }, {
+    'curse': 0.1
+  }],
+  [_0x5037ae['REVIVAL']]: [{
+    'level': 0x1,
+    'hidden': !0x1,
+    'bulletType': _0x5037ae[_0x114511(0x790)],
+    'name': 'Tiragisú',
+    'description': 'Revives once with 50% health.',
+    'texture': 'items',
+    'frameName': 'Tiramisu.png',
+    'evoSynergy': [_0x5037ae['GUNS'], _0x5037ae[_0x114511(0x234)]],
+    'evoInto': _0x5037ae[_0x114511(0xc38)],
+    'isUnlocked': !0x1,
+    'rarity': 0x28,
+    'isPowerUp': !0x0,
+    'revivals': 0x1
+  }, {
+    'revivals': 0x1
+  }],
+  [_0x5037ae['SILVER']]: [{
+    'level': 0x1,
+    'hidden': !0x1,
+    'bulletType': _0x5037ae[_0x114511(0x744)],
+    'name': 'Silver Ring',
+    'description': 'Wear ... Clock ...',
+    'texture': 'items',
+    'frameName': 'silverring.png',
+    'evoSynergy': [_0x5037ae['LANCET'], _0x5037ae['GOLD']],
+    'evoInto': _0x5037ae[_0x114511(0xccc)],
+    'unexcludeSelf': !0x0,
+    'isUnlocked': !0x1,
+    'rarity': 0xa,
+    'isPowerUp': !0x0,
+    'isSpecialOnly': !0x0
+  }, {
+    'duration': 0.05,
+    'area': 0.05
+  }, {
+    'duration': 0.05,
+    'area': 0.05
+  }, {
+    'duration': 0.05,
+    'area': 0.05
+  }, {
+    'duration': 0.05,
+    'area': 0.05
+  }, {
+    'duration': 0.05,
+    'area': 0.05
+  }, {
+    'duration': 0.05,
+    'area': 0.05
+  }, {
+    'duration': 0.05,
+    'area': 0.05
+  }, {
+    'duration': 0.05,
+    'area': 0.05
+  }],
+  [_0x5037ae[_0x114511(0xad3)]]: [{
+    'level': 0x1,
+    'hidden': !0x1,
+    'bulletType': _0x5037ae[_0x114511(0xad3)],
+    'name': 'Gold Ring',
+    'description': '... With ... Lancet',
+    'texture': 'items',
+    'frameName': 'goldring.png',
+    'evoSynergy': [_0x5037ae[_0x114511(0x8b6)], _0x5037ae[_0x114511(0x744)]],
+    'evoInto': _0x5037ae['CORRIDOR'],
+    'unexcludeSelf': !0x0,
+    'isUnlocked': !0x1,
+    'rarity': 0xa,
+    'isPowerUp': !0x0,
+    'isSpecialOnly': !0x0
+  }, {
+    'curse': 0.05
+  }, {
+    'curse': 0.05
+  }, {
+    'curse': 0.05
+  }, {
+    'curse': 0.05
+  }, {
+    'curse': 0.05
+  }, {
+    'curse': 0.05
+  }, {
+    'curse': 0.05
+  }, {
+    'curse': 0.05
+  }],
+  [_0x5037ae[_0x114511(0x243)]]: [{
+    'level': 0x1,
+    'hidden': !0x1,
+    'bulletType': _0x5037ae['LEFT'],
+    'name': 'Metaglio Left',
+    'description': 'Channels dark powers to protect the bearer.',
+    'texture': 'items',
+    'frameName': 'bsleft.png',
+    'evoSynergy': [_0x5037ae['LAUREL'], _0x5037ae[_0x114511(0xc60)]],
+    'evoInto': _0x5037ae[_0x114511(0x6bd)],
+    'unexcludeSelf': !0x0,
+    'isUnlocked': !0x1,
+    'rarity': 0xa,
+    'isPowerUp': !0x0,
+    'isSpecialOnly': !0x0
+  }, {
+    'regen': 0.1,
+    'maxHp': 0.05
+  }, {
+    'regen': 0.1,
+    'maxHp': 0.05
+  }, {
+    'regen': 0.1,
+    'maxHp': 0.05
+  }, {
+    'regen': 0.1,
+    'maxHp': 0.05
+  }, {
+    'regen': 0.1,
+    'maxHp': 0.05
+  }, {
+    'regen': 0.1,
+    'maxHp': 0.05
+  }, {
+    'regen': 0.1,
+    'maxHp': 0.05
+  }, {
+    'regen': 0.1,
+    'maxHp': 0.05
+  }],
+  [_0x5037ae['RIGHT']]: [{
+    'level': 0x1,
+    'hidden': !0x1,
+    'bulletType': _0x5037ae[_0x114511(0xc60)],
+    'name': 'Metaglio Right',
+    'description': 'Channels dark powers to curse the bearer.',
+    'texture': 'items',
+    'frameName': 'bsright.png',
+    'evoSynergy': [_0x5037ae[_0x114511(0x674)], _0x5037ae['LEFT']],
+    'evoInto': _0x5037ae[_0x114511(0x6bd)],
+    'unexcludeSelf': !0x0,
+    'isUnlocked': !0x1,
+    'rarity': 0xa,
+    'isPowerUp': !0x0,
+    'isSpecialOnly': !0x0
+  }, {
+    'curse': 0.05
+  }, {
+    'curse': 0.05
+  }, {
+    'curse': 0.05
+  }, {
+    'curse': 0.05
+  }, {
+    'curse': 0.05
+  }, {
+    'curse': 0.05
+  }, {
+    'curse': 0.05
+  }, {
+    'curse': 0.05
+  }],
+  [_0x5037ae['PANDORA']]: [{
+    'level': 0x1,
+    'hidden': !0x1,
+    'bulletType': _0x5037ae[_0x114511(0x990)],
+    'name': 'Torrona\'s Box',
+    'description': 'Cursed item, but increases Might, Projectile Speed, Duration, and Area by 4%.',
+    'texture': 'items',
+    'frameName': 'torrone.png',
+    'isUnlocked': !0x1,
+    'rarity': 0x28,
+    'isPowerUp': !0x0,
+    'power': 0.04,
+    'speed': 0.04,
+    'duration': 0.04,
+    'area': 0.04,
+    'override': 'Cursed item, but increases Might, Projectile Speed, Duration, and Area by 4%.'
+  }, {
+    'power': 0.03,
+    'speed': 0.03,
+    'duration': 0.03,
+    'area': 0.03,
+    'override': 'Increases Might, Projectile Speed, Duration, and Area by 3%'
+  }, {
+    'power': 0.03,
+    'speed': 0.03,
+    'duration': 0.03,
+    'area': 0.03,
+    'override': 'Increases Might, Projectile Speed, Duration, and Area by 3%'
+  }, {
+    'power': 0.03,
+    'speed': 0.03,
+    'duration': 0.03,
+    'area': 0.03,
+    'override': 'Increases Might, Projectile Speed, Duration, and Area by 3%'
+  }, {
+    'power': 0.03,
+    'speed': 0.03,
+    'duration': 0.03,
+    'area': 0.03,
+    'override': 'Increases Might, Projectile Speed, Duration, and Area by 3%'
+  }, {
+    'power': 0.03,
+    'speed': 0.03,
+    'duration': 0.03,
+    'area': 0.03,
+    'override': 'Increases Might, Projectile Speed, Duration, and Area by 3%'
+  }, {
+    'power': 0.03,
+    'speed': 0.03,
+    'duration': 0.03,
+    'area': 0.03,
+    'override': 'Increases Might, Projectile Speed, Duration, and Area by 3%'
+  }, {
+    'power': 0.03,
+    'speed': 0.03,
+    'duration': 0.03,
+    'area': 0.03,
+    'override': 'Increases Might, Projectile Speed, Duration, and Area by 3%'
+  }, {
+    'curse': 0x1
+  }]
+};
